@@ -1,0 +1,11 @@
+[Protocol]
+exec=securecloud-qt '%u'
+protocol=securecloud
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

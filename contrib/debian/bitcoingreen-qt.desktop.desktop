@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SecureCloud
+Comment=SecureCloud P2P Cryptocurrency
+Exec=securecloud-qt %u
+Terminal=false
+Type=Application
+Icon=securecloud128
+MimeType=x-scheme-handler/securecloud;
+Categories=Office;Finance;
+Name[en_US]=securecloud-qt.desktop
