@@ -1,4 +1,4 @@
-# SecureCloud Core integration/staging repository
+# Salvage Core integration/staging repository
 
 ## Coin Specs
 

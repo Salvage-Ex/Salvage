@@ -1,11 +1,11 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=SecureCloud
-Comment=SecureCloud P2P Cryptocurrency
-Exec=securecloud-qt %u
+Name=Salvage
+Comment=Salvage P2P Cryptocurrency
+Exec=salvage-qt %u
 Terminal=false
 Type=Application
-Icon=securecloud128
-MimeType=x-scheme-handler/securecloud;
+Icon=salvage128
+MimeType=x-scheme-handler/salvage;
 Categories=Office;Finance;
-Name[en_US]=securecloud-qt.desktop
+Name[en_US]=salvage-qt.desktop

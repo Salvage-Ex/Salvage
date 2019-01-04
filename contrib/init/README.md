@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: securecloudd.service
-Upstart: securecloudd.conf
-OpenRC:  securecloudd.openrc
-         securecloudd.openrcconf
-CentOS:  securecloudd.init
+SystemD: salvaged.service
+Upstart: salvaged.conf
+OpenRC:  salvaged.openrc
+         salvaged.openrcconf
+CentOS:  salvaged.init
 
 have been made available to assist packagers in creating node packages here.
 

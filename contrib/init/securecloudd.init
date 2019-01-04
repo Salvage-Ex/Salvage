@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  securecloudd The SecureCloud core server.
+#  salvaged The Salvage core server.
 #
 #
 # chkconfig: 345 80 20
-# description: securecloudd
-# processname: securecloudd
+# description: salvaged
+# processname: salvaged
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/securecloudd, see below
-if [ -f /etc/sysconfig/securecloudd ]; then
-        . /etc/sysconfig/securecloudd
+# you can override defaults in /etc/sysconfig/salvaged, see below
+if [ -f /etc/sysconfig/salvaged ]; then
+        . /etc/sysconfig/salvaged
 fi
 
 RETVAL=0
 
-prog=securecloudd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/securecloudd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/securecloudd}
+prog=salvaged
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/salvaged
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/salvaged}
 
-# securecloudd defaults to /usr/bin/securecloudd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/securecloudd}
+# salvaged defaults to /usr/bin/salvaged, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/salvaged}
 
-# securecloudd opts default to -disablewallet, override with BITCOIND_OPTS
+# salvaged opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

@@ -3,6 +3,7 @@
 // Copyright (c) 2009-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2017-2018 The SecureCloud developers
+// Copyright (c) 2019 The Salvage developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -28,7 +29,7 @@ std::string HelpMessageCli()
     string strUsage;
     strUsage += HelpMessageGroup(_("Options:"));
     strUsage += HelpMessageOpt("-?", _("This help message"));
-    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "securecloud.conf"));
+    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "salvage.conf"));
     strUsage += HelpMessageOpt("-datadir=<dir>", _("Specify data directory"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
     strUsage += HelpMessageOpt("-regtest", _("Enter regression test mode, which uses a special chain in which blocks can be "
@@ -69,12 +70,12 @@ static bool AppInitRPC(int argc, char* argv[])
     //
     ParseParameters(argc, argv);
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("SecureCloud Core RPC client version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("Salvage Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  securecloud-cli [options] <command> [params]  " + _("Send command to SecureCloud Core") + "\n" +
-                        "  securecloud-cli [options] help                " + _("List commands") + "\n" +
-                        "  securecloud-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                        "  salvage-cli [options] <command> [params]  " + _("Send command to Salvage Core") + "\n" +
+                        "  salvage-cli [options] help                " + _("List commands") + "\n" +
+                        "  salvage-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }

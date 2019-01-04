@@ -3,6 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2017 The SecureCloud developers
+// Copyright (c) 2019 The Salvage developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -108,7 +109,7 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 2 * 60; 
-        nTargetSpacing = 1 * 60;  // SecureCloud: 1 minute blocks during POW (block 1-200)
+        nTargetSpacing = 1 * 60;  // Salvage: 1 minute blocks during POW (block 1-200)
         nMaturity = 5; // 6 block maturity (+1 elsewhere)
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 16000000 * COIN; // 16 million max supply
@@ -117,7 +118,7 @@ public:
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 1; // we use the version 2 for SCN
 
-        const char* pszTimestamp = "SecureCloudNetwork has launched! - zabtc 25/10/2018";
+        const char* pszTimestamp = "SalvageNetwork has launched! - zabtc 25/10/2018";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -136,17 +137,17 @@ public:
         assert(hashGenesisBlock == uint256("0x000005aac3776a054d1d4c2e2c8e2f251591b9edc586107f5adfb5e693f305d6"));
         assert(genesis.hashMerkleRoot == uint256("0xb9e8be7516d514a733a481dc7db4fa04e89b59e0407e99292337cf28d40dcaae"));
  
-        // SecureCloud addresses start with 's'
+        // Salvage addresses start with 's'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125);
-        // SecureCloud script addresses start with '3'
+        // Salvage script addresses start with '3'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 6);
-        // SecureCloud private keys start with 'K'
+        // Salvage private keys start with 'K'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 46);
-        // SecureCloud BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // Salvage BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // SecureCloud BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // Salvage BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // SecureCloud BIP44 coin type is '222' (0x800000de)
+        // Salvage BIP44 coin type is '222' (0x800000de)
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xde).convert_to_container<std::vector<unsigned char> >();
 
@@ -199,8 +200,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // SecureCloud: 1 day
-        nTargetSpacing = 2 * 60;  // SecureCloud: 1 minute
+        nTargetTimespan = 1 * 60; // Salvage: 1 day
+        nTargetSpacing = 2 * 60;  // Salvage: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -217,17 +218,17 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        // Testnet SecureCloud addresses start with 'g'
+        // Testnet Salvage addresses start with 'g'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 98);
-        // Testnet SecureCloud script addresses start with '5' or '6'
+        // Testnet Salvage script addresses start with '5' or '6'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);
         // Testnet private keys start with 'k'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 108);
-        // Testnet SecureCloud BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet Salvage BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet SecureCloud BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet Salvage BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet securecloud BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet salvage BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -273,8 +274,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // SecureCloud: 1 day
-        nTargetSpacing = 2 * 60;        // SecureCloud: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Salvage: 1 day
+        nTargetSpacing = 2 * 60;        // Salvage: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1516926684;
         genesis.nBits = 0x207fffff;

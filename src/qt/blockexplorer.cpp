@@ -473,8 +473,8 @@ void BlockExplorer::showEvent(QShowEvent*)
         updateNavButtons();
 
         if (!GetBoolArg("-txindex", false)) {
-            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (securecloud.conf).");
-            QMessageBox::warning(this, "SecureCloud Core Blockchain Explorer", Warning, QMessageBox::Ok);
+            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (salvage.conf).");
+            QMessageBox::warning(this, "Salvage Core Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }
 }

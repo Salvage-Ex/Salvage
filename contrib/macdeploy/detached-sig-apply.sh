@@ -5,7 +5,7 @@ UNSIGNED=$1
 SIGNATURE=$2
 ARCH=x86_64
 ROOTDIR=dist
-BUNDLE=${ROOTDIR}/SecureCloud-Qt.app
+BUNDLE=${ROOTDIR}/Salvage-Qt.app
 TEMPDIR=signed.temp
 OUTDIR=signed-app
 

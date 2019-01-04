@@ -129,7 +129,7 @@ public:
 };
 
 /**
- * SecureCloud RPC command dispatcher.
+ * Salvage RPC command dispatcher.
  */
 class CRPCTable
 {

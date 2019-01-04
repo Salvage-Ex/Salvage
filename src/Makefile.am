@@ -72,15 +72,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += securecloudd
+  bin_PROGRAMS += salvaged
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += securecloud-cli securecloud-tx
+  bin_PROGRAMS += salvage-cli salvage-tx
 endif
 
 .PHONY: FORCE
-# securecloud core #
+# salvage core #
 BITCOIN_CORE_H = \
   bignum.h \
   activemasternode.h \
@@ -183,7 +183,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between securecloudd and securecloud-qt
+# server: shared between salvaged and salvage-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -228,7 +228,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between securecloudd and securecloud-qt, but only linked
+# wallet: shared between salvaged and salvage-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -290,7 +290,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_skein.h \
   crypto/sph_types.h
 
-# common: shared between securecloudd, and securecloud-qt and non-server tools
+# common: shared between salvaged, and salvage-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -348,7 +348,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between securecloud-cli and securecloud-qt
+# cli: shared between salvage-cli and salvage-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -358,7 +358,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-securecloudd_LDADD = \
+salvaged_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -369,26 +369,26 @@ securecloudd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-securecloudd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+salvaged_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-securecloudd_LDADD += libbitcoin_wallet.a
+salvaged_LDADD += libbitcoin_wallet.a
 endif
-securecloudd_SOURCES = securecloudd.cpp
+salvaged_SOURCES = salvaged.cpp
 #
 
 if TARGET_WINDOWS
-securecloudd_SOURCES += securecloudd-res.rc
+salvaged_SOURCES += salvaged-res.rc
 endif
 
-securecloudd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-securecloudd_CPPFLAGS = $(BITCOIN_INCLUDES)
-securecloudd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+salvaged_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+salvaged_CPPFLAGS = $(BITCOIN_INCLUDES)
+salvaged_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# securecloud-cli binary #
-securecloud_cli_LDADD = \
+# salvage-cli binary #
+salvage_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
@@ -397,14 +397,14 @@ securecloud_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-securecloud_cli_SOURCES = \
-  securecloud-cli.cpp
+salvage_cli_SOURCES = \
+  salvage-cli.cpp
 
-securecloud_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+salvage_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# securecloud-tx binary #
-securecloud_tx_LDADD = \
+# salvage-tx binary #
+salvage_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -413,15 +413,15 @@ securecloud_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-securecloud_tx_SOURCES = securecloud-tx.cpp
-securecloud_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+salvage_tx_SOURCES = salvage-tx.cpp
+salvage_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-securecloud_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+salvage_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-securecloud_cli_SOURCES += securecloud-cli-res.rc
+salvage_cli_SOURCES += salvage-cli-res.rc
 endif
-securecloud_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+salvage_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

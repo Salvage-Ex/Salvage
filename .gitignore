@@ -7,12 +7,12 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/securecloud
-src/securecloudd
-src/securecloud-cli
-src/securecloud-tx
-src/test/test_securecloud
-src/qt/test/test_securecloud-qt
+src/salvage
+src/salvaged
+src/salvage-cli
+src/salvage-tx
+src/test/test_salvage
+src/qt/test/test_salvage-qt
 
 # autoreconf
 Makefile.in
@@ -38,8 +38,8 @@ confdefs.h
 conftest.cpp
 conftest.err
 libtool
-src/config/securecloud-config.h
-src/config/securecloud-config.h.in
+src/config/salvage-config.h
+src/config/salvage-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -62,7 +62,7 @@ src/qt/test/moc*.cpp
 *.pyc
 *.o
 *.o-*
-.securecloud
+.salvage
 *.a
 *.pb.cc
 *.pb.h
@@ -81,12 +81,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-securecloud-qt
-SecureCloud-Qt.app
+salvage-qt
+Salvage-Qt.app
 
 # Unit-tests
 Makefile.test
-securecloud-qt_test
+salvage-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -102,7 +102,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_securecloud.coverage/
+test_salvage.coverage/
 total.coverage/
 coverage_percent.txt
 

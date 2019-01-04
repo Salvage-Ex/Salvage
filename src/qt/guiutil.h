@@ -30,7 +30,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the SecureCloud Qt UI.
+/** Utility functions used by the Salvage Qt UI.
  */
 namespace GUIUtil
 {
@@ -45,7 +45,7 @@ QFont bitcoinAddressFont();
 void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent);
 void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 
-// Parse "securecloud:" URI into recipient object, return true on successful parsing
+// Parse "salvage:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);
@@ -111,7 +111,7 @@ bool isObscured(QWidget* w);
 // Open debug.log
 void openDebugLogfile();
 
-// Open securecloud.conf
+// Open salvage.conf
 void openConfigfile();
 
 // Open masternode.conf

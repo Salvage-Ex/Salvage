@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/securecloud-config.h"
+#include "config/salvage-config.h"
 #endif
 
 #ifdef WIN32

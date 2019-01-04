@@ -1,19 +1,19 @@
 [Unit]
-Description=SecureCloud's distributed currency daemon
+Description=Salvage's distributed currency daemon
 After=network.target
 
 [Service]
-User=securecloud
-Group=securecloud
+User=salvage
+Group=salvage
 
 Type=forking
-PIDFile=/var/lib/securecloudd/securecloudd.pid
+PIDFile=/var/lib/salvaged/salvaged.pid
 
-ExecStart=/usr/bin/securecloudd -daemon -pid=/var/lib/securecloudd/securecloudd.pid \
-          -conf=/etc/securecloud/securecloud.conf -datadir=/var/lib/securecloudd
+ExecStart=/usr/bin/salvaged -daemon -pid=/var/lib/salvaged/salvaged.pid \
+          -conf=/etc/salvage/salvage.conf -datadir=/var/lib/salvaged
 
-ExecStop=-/usr/bin/securecloud-cli -conf=/etc/securecloud/securecloud.conf \
-         -datadir=/var/lib/securecloudd stop
+ExecStop=-/usr/bin/salvage-cli -conf=/etc/salvage/salvage.conf \
+         -datadir=/var/lib/salvaged stop
 
 Restart=always
 PrivateTmp=true

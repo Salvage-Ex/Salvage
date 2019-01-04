@@ -343,11 +343,11 @@ void OverviewPage::SetLinks()
     ui->labelLinks6->setText("Github:");
     ui->labelLinks7->setText("SCN Merchants");
 
-    ui->labelLinksUrl1->setText("<a href=\"https://www.securecloudnet.org\">https://www.securecloudnet.org</a>");
-    ui->labelLinksUrl2->setText("<a href=\"https://securecloudnet.org/go/whitepaper\">https://securecloudnet.org/go/whitepaper</a>");
-    ui->labelLinksUrl3->setText("<a href=\"http://explorer.securecloudnet.org:3001\">http://explorer.securecloudnet.org:3001</a>");
-    ui->labelLinksUrl4->setText("<a href=\"https://securecloudnet.org/go/discord\">https://securecloudnet.org/go/discord</a>");
-    ui->labelLinksUrl5->setText("<a href=\"https://securecloudnet.org/go/twitter\">https://securecloudnet.org/go/twitter</a>");
-    ui->labelLinksUrl6->setText("<a href=\"https://github.com/securecloudnet/SecureCloud\">https://github.com/securecloudnet/SecureCloud</a>");
-    ui->labelLinksUrl7->setText("<a href=\"https://securecloudnet.org/list-of-merchants-taking-scn\">https://securecloudnet.org/list-of-merchants-taking-scn</a>");
+    ui->labelLinksUrl1->setText("<a href=\"https://www.salvagenet.org\">https://www.salvagenet.org</a>");
+    ui->labelLinksUrl2->setText("<a href=\"https://salvagenet.org/go/whitepaper\">https://salvagenet.org/go/whitepaper</a>");
+    ui->labelLinksUrl3->setText("<a href=\"http://explorer.salvagenet.org:3001\">http://explorer.salvagenet.org:3001</a>");
+    ui->labelLinksUrl4->setText("<a href=\"https://salvagenet.org/go/discord\">https://salvagenet.org/go/discord</a>");
+    ui->labelLinksUrl5->setText("<a href=\"https://salvagenet.org/go/twitter\">https://salvagenet.org/go/twitter</a>");
+    ui->labelLinksUrl6->setText("<a href=\"https://github.com/salvagenet/Salvage\">https://github.com/salvagenet/Salvage</a>");
+    ui->labelLinksUrl7->setText("<a href=\"https://salvagenet.org/list-of-merchants-taking-scn\">https://salvagenet.org/list-of-merchants-taking-scn</a>");
 }

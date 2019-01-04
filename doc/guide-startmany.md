@@ -4,7 +4,7 @@
 There are many ways to setup a wallet to support start-many. This guide will walk through two of them.
 
 1. [Importing an existing wallet (recommended if you are consolidating wallets).](#option1)
-2. [Sending 2,500 SecureCloud to new wallet addresses.](#option2)
+2. [Sending 2,500 Salvage to new wallet addresses.](#option2)
 
 ## <a name="option1"></a>Option 1. Importing an existing wallet
 
@@ -111,20 +111,20 @@ mn01 127.0.0.1:9191 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84
 mn02 127.0.0.2:9191 93WaAb3htPJEV8E9aQcN23Jt97bPex7YvWfgMDTUdWJvzmrMqey aa9f1034d973377a5e733272c3d0eced1de22555ad45d6b24abadff8087948d4 0 7gnwGHt17heGpG9Crfeh4KGpYNFugPhJdh:25
 ```
 
-## What about the securecloud.conf file?
+## What about the salvage.conf file?
 
-If you are using a masternode.conf file you no longer need the securecloud.conf file. The exception is if you need custom settings (thanks oblox).
+If you are using a masternode.conf file you no longer need the salvage.conf file. The exception is if you need custom settings (thanks oblox).
 
-## Update securecloud.conf on server
+## Update salvage.conf on server
 
-If you generated a new masternode private key, you will need to update the remote securecloud.conf files.
+If you generated a new masternode private key, you will need to update the remote salvage.conf files.
 
 Shut down the daemon and then edit the file.
 
-```sudo nano .securecloud/securecloud.conf```
+```sudo nano .salvage/salvage.conf```
 
 ### Edit the masternodeprivkey
-If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote securecloud.conf file.
+If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote salvage.conf file.
 
 ## Start your MasterNodes
 
@@ -134,9 +134,9 @@ If your remote server is not running, start your remote daemon as you normally w
 
 I usually confirm that remote is on the correct block by issuing:
 
-```securecloudd getinfo```
+```salvaged getinfo```
 OR
-```securecloud-cli getinfo```
+```salvage-cli getinfo```
 
 And compare with the official explorer at http://explorer.scn.network
 

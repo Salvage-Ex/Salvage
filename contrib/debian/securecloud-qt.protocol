@@ -1,6 +1,6 @@
 [Protocol]
-exec=securecloud-qt '%u'
-protocol=securecloud
+exec=salvage-qt '%u'
+protocol=salvage
 input=none
 output=none
 helper=true

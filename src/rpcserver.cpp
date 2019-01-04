@@ -260,10 +260,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop SecureCloud server.");
+            "\nStop Salvage server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "SecureCloud server stopping";
+    return "Salvage server stopping";
 }
 
 
@@ -346,33 +346,33 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
         {"hidden", "makekeypair", &makekeypair, true, true, false},
 		
-        /* SecureCloud features */
-        {"securecloud", "masternode", &masternode, true, true, false},
-        {"securecloud", "listmasternodes", &listmasternodes, true, true, false},
-        {"securecloud", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"securecloud", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"securecloud", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"securecloud", "masternodedebug", &masternodedebug, true, true, false},
-        {"securecloud", "startmasternode", &startmasternode, true, true, false},
-        {"securecloud", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"securecloud", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"securecloud", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"securecloud", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"securecloud", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"securecloud", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"securecloud", "mnbudget", &mnbudget, true, true, false},
-        {"securecloud", "preparebudget", &preparebudget, true, true, false},
-        {"securecloud", "submitbudget", &submitbudget, true, true, false},
-        {"securecloud", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"securecloud", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"securecloud", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"securecloud", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"securecloud", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"securecloud", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"securecloud", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"securecloud", "checkbudgets", &checkbudgets, true, true, false},
-        {"securecloud", "mnsync", &mnsync, true, true, false},
-        {"securecloud", "spork", &spork, true, true, false},
+        /* Salvage features */
+        {"salvage", "masternode", &masternode, true, true, false},
+        {"salvage", "listmasternodes", &listmasternodes, true, true, false},
+        {"salvage", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"salvage", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"salvage", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"salvage", "masternodedebug", &masternodedebug, true, true, false},
+        {"salvage", "startmasternode", &startmasternode, true, true, false},
+        {"salvage", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"salvage", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"salvage", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"salvage", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"salvage", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"salvage", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"salvage", "mnbudget", &mnbudget, true, true, false},
+        {"salvage", "preparebudget", &preparebudget, true, true, false},
+        {"salvage", "submitbudget", &submitbudget, true, true, false},
+        {"salvage", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"salvage", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"salvage", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"salvage", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"salvage", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"salvage", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"salvage", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"salvage", "checkbudgets", &checkbudgets, true, true, false},
+        {"salvage", "mnsync", &mnsync, true, true, false},
+        {"salvage", "spork", &spork, true, true, false},
 #ifdef ENABLE_WALLET
 
         /* Wallet */
@@ -1079,7 +1079,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> securecloud-cli " + methodname + " " + args + "\n";
+    return "> salvage-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

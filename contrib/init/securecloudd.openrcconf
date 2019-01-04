@@ -1,25 +1,25 @@
-# /etc/conf.d/securecloudd: config file for /etc/init.d/securecloudd
+# /etc/conf.d/salvaged: config file for /etc/init.d/salvaged
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/securecloud/securecloud.conf"
+#BITCOIND_CONFIGFILE="/etc/salvage/salvage.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/securecloudd"
+#BITCOIND_PIDDIR="/var/run/salvaged"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/securecloudd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/salvaged.pid"
 
-# Where to write securecloudd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/securecloudd"
+# Where to write salvaged data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/salvaged"
 
-# User and group to own securecloudd process
-#BITCOIND_USER="securecloud"
-#BITCOIND_GROUP="securecloud"
+# User and group to own salvaged process
+#BITCOIND_USER="salvage"
+#BITCOIND_GROUP="salvage"
 
-# Path to securecloudd executable
-#BITCOIND_BIN="/usr/bin/securecloudd"
+# Path to salvaged executable
+#BITCOIND_BIN="/usr/bin/salvaged"
 
-# Nice value to run securecloudd under
+# Nice value to run salvaged under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

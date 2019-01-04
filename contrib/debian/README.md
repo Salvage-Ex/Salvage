@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package securecloudd/securecloud-qt
-for Debian-based Linux systems. If you compile securecloudd/securecloud-qt yourself, there are some useful files here.
+This directory contains files used to package salvaged/salvage-qt
+for Debian-based Linux systems. If you compile salvaged/salvage-qt yourself, there are some useful files here.
 
-## securecloud: URI support ##
+## salvage: URI support ##
 
 
-securecloud-qt.desktop  (Gnome / Open Desktop)
+salvage-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install securecloud-qt.desktop
+	sudo desktop-file-install salvage-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your securecloudqt binary to `/usr/bin`
-and the `../../share/pixmaps/securecloud128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your salvageqt binary to `/usr/bin`
+and the `../../share/pixmaps/salvage128.png` to `/usr/share/pixmaps`
 
-securecloud-qt.protocol (KDE)
+salvage-qt.protocol (KDE)
 

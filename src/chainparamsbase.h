@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between securecloud-cli and securecloudd)
- * of a given instance of the SecureCloud system.
+ * CBaseChainParams defines the base parameters (shared between salvage-cli and salvaged)
+ * of a given instance of the Salvage system.
  */
 class CBaseChainParams
 {
