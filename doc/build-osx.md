@@ -44,7 +44,7 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/salvage/salvage.git
+        git clone https://github.com/Salvage-Ex/Salvage.git
         cd salvage
 
 2.  Build salvaged:

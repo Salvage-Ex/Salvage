@@ -3,7 +3,7 @@ Salvage Core
 
 Setup
 ---------------------
-[Salvage Core](https://www.scn.network) is the original Salvage client and it builds the backbone of the network. However, it downloads and stores the entire history of Salvage transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Salvage Core](https://www.svg.network) is the original Salvage client and it builds the backbone of the network. However, it downloads and stores the entire history of Salvage transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -38,7 +38,7 @@ The following are developer notes on how to build Salvage on your native platfor
 
 Development
 ---------------------
-The Salvage repo's [root README](https://github.com/salvage/salvage/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Salvage repo's [root README](https://github.com/Salvage-Ex/Salvage/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

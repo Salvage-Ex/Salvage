@@ -128,7 +128,7 @@ public slots:
     /** Show progress dialog e.g. for rescan */
     void showProgress(const QString& title, int nProgress);
 
-    /** Update selected SCN amount from transactionview */
+    /** Update selected SVG amount from transactionview */
     void trxAmount(QString amount);
 
 signals:

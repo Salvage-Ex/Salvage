@@ -33,7 +33,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::SCN)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::SVG)
     {
     }
 
@@ -178,16 +178,16 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // SCN Balance
+    // SVG Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
-    CAmount scnAvailableBalance = balance - immatureBalance - nLockedBalance;
+    CAmount svgAvailableBalance = balance - immatureBalance - nLockedBalance;
 
-    // SCN Watch-Only Balance
+    // SVG Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
-    // SCN labels
-    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, scnAvailableBalance, false, BitcoinUnits::separatorAlways));
+    // SVG labels
+    ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, svgAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
     ui->labelLockedBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nLockedBalance, false, BitcoinUnits::separatorAlways));
@@ -206,33 +206,33 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // SCN Available
-    bool showSCNAvailable = settingShowAllBalances || scnAvailableBalance != nTotalBalance;
-    bool showWatchOnlySCNAvailable = showSCNAvailable || nAvailableWatchBalance != nTotalWatchBalance;
-    ui->labelBalanceText->setVisible(showSCNAvailable || showWatchOnlySCNAvailable);
-    ui->labelBalance->setVisible(showSCNAvailable || showWatchOnlySCNAvailable);
-    ui->labelWatchAvailable->setVisible(showSCNAvailable && showWatchOnly);
+    // SVG Available
+    bool showSVGAvailable = settingShowAllBalances || svgAvailableBalance != nTotalBalance;
+    bool showWatchOnlySVGAvailable = showSVGAvailable || nAvailableWatchBalance != nTotalWatchBalance;
+    ui->labelBalanceText->setVisible(showSVGAvailable || showWatchOnlySVGAvailable);
+    ui->labelBalance->setVisible(showSVGAvailable || showWatchOnlySVGAvailable);
+    ui->labelWatchAvailable->setVisible(showSVGAvailable && showWatchOnly);
 
-    // SCN Pending
-    bool showSCNPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlySCNPending = showSCNPending || watchUnconfBalance != 0;
-    ui->labelPendingText->setVisible(showSCNPending || showWatchOnlySCNPending);
-    ui->labelUnconfirmed->setVisible(showSCNPending || showWatchOnlySCNPending);
-    ui->labelWatchPending->setVisible(showSCNPending && showWatchOnly);
+    // SVG Pending
+    bool showSVGPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlySVGPending = showSVGPending || watchUnconfBalance != 0;
+    ui->labelPendingText->setVisible(showSVGPending || showWatchOnlySVGPending);
+    ui->labelUnconfirmed->setVisible(showSVGPending || showWatchOnlySVGPending);
+    ui->labelWatchPending->setVisible(showSVGPending && showWatchOnly);
 
-    // SCN Immature
+    // SVG Immature
     bool showImmature = settingShowAllBalances || immatureBalance != 0;
     bool showWatchOnlyImmature = showImmature || watchImmatureBalance != 0;
     ui->labelImmatureText->setVisible(showImmature || showWatchOnlyImmature);
     ui->labelImmature->setVisible(showImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // SCN Locked
-    bool showSCNLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlySCNLocked = showSCNLocked || nWatchOnlyLockedBalance != 0;
-    ui->labelLockedBalanceText->setVisible(showSCNLocked || showWatchOnlySCNLocked);
-    ui->labelLockedBalance->setVisible(showSCNLocked || showWatchOnlySCNLocked);
-    ui->labelWatchLocked->setVisible(showSCNLocked && showWatchOnly);
+    // SVG Locked
+    bool showSVGLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlySVGLocked = showSVGLocked || nWatchOnlyLockedBalance != 0;
+    ui->labelLockedBalanceText->setVisible(showSVGLocked || showWatchOnlySVGLocked);
+    ui->labelLockedBalance->setVisible(showSVGLocked || showWatchOnlySVGLocked);
+    ui->labelWatchLocked->setVisible(showSVGLocked && showWatchOnly);
 
     static int cachedTxLocks = 0;
 
@@ -302,7 +302,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("SCN")
+    // update the display unit, to not use the default ("SVG")
     updateDisplayUnit();
 }
 
@@ -341,13 +341,13 @@ void OverviewPage::SetLinks()
     ui->labelLinks4->setText("Discord:");
     ui->labelLinks5->setText("Twitter:");
     ui->labelLinks6->setText("Github:");
-    ui->labelLinks7->setText("SCN Merchants");
+    ui->labelLinks7->setText("SVG Merchants");
 
     ui->labelLinksUrl1->setText("<a href=\"https://www.salvagenet.org\">https://www.salvagenet.org</a>");
     ui->labelLinksUrl2->setText("<a href=\"https://salvagenet.org/go/whitepaper\">https://salvagenet.org/go/whitepaper</a>");
     ui->labelLinksUrl3->setText("<a href=\"http://explorer.salvagenet.org:3001\">http://explorer.salvagenet.org:3001</a>");
     ui->labelLinksUrl4->setText("<a href=\"https://salvagenet.org/go/discord\">https://salvagenet.org/go/discord</a>");
     ui->labelLinksUrl5->setText("<a href=\"https://salvagenet.org/go/twitter\">https://salvagenet.org/go/twitter</a>");
-    ui->labelLinksUrl6->setText("<a href=\"https://github.com/salvagenet/Salvage\">https://github.com/salvagenet/Salvage</a>");
-    ui->labelLinksUrl7->setText("<a href=\"https://salvagenet.org/list-of-merchants-taking-scn\">https://salvagenet.org/list-of-merchants-taking-scn</a>");
+    ui->labelLinksUrl6->setText("<a href=\"https://github.com/Salvage-Ex/Salvage\">https://github.com/Salvage-Ex/Salvage</a>");
+    ui->labelLinksUrl7->setText("<a href=\"https://salvagenet.org/list-of-merchants-taking-svg\">https://salvagenet.org/list-of-merchants-taking-svg</a>");
 }

@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/salvage/salvage-detached-sigs.git"
+- "url": "https://github.com/Salvage-Ex/Salvage-detached-sigs.git"
   "dir": "signature"
 files:
 - "salvage-osx-unsigned.tar.gz"

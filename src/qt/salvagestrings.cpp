@@ -81,10 +81,10 @@ QT_TRANSLATE_NOOP("salvage-core", ""
 "Execute command when the best block changes (%s in cmd is replaced by block "
 "hash)"),
 QT_TRANSLATE_NOOP("salvage-core", ""
-"Fees (in SCN/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in SVG/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("salvage-core", ""
-"Fees (in SCN/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in SVG/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("salvage-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -168,7 +168,7 @@ QT_TRANSLATE_NOOP("salvage-core", ""
 "Unable to bind to %s on this computer. Salvage Core is probably already running."),
 QT_TRANSLATE_NOOP("salvage-core", ""
 "Unable to locate enough funds for this transaction that are not equal 1000 "
-"SCN."),
+"SVG."),
 QT_TRANSLATE_NOOP("salvage-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -276,7 +276,7 @@ QT_TRANSLATE_NOOP("salvage-core", "Failed to listen on any port. Use -listen=0 i
 QT_TRANSLATE_NOOP("salvage-core", "Failed to read block index"),
 QT_TRANSLATE_NOOP("salvage-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("salvage-core", "Failed to write block index"),
-QT_TRANSLATE_NOOP("salvage-core", "Fee (in SCN/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("salvage-core", "Fee (in SVG/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("salvage-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("salvage-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("salvage-core", "Found enough users, signing ( waiting %s )"),

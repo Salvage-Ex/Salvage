@@ -2,14 +2,14 @@
 
 Salvage Core version *version* is now available from:
 
-  <https://github.com/salvage/salvage/releases>
+  <https://github.com/Salvage-Ex/Salvage/releases>
 
 This is a new major version release, including various bug fixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/salvage/salvage/issues>
+  <https://github.com/Salvage-Ex/Salvage/issues>
 
 Mandatory Update
 ==============

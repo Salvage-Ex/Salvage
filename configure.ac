@@ -19,9 +19,9 @@ BITCOIN_TX_NAME=salvage-tx
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef SCN_CONFIG_H])
-AH_TOP([#define SCN_CONFIG_H])
-AH_BOTTOM([#endif //SCN_CONFIG_H])
+AH_TOP([#ifndef SVG_CONFIG_H])
+AH_TOP([#define SVG_CONFIG_H])
+AH_BOTTOM([#endif //SVG_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

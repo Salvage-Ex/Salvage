@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The SecureCloud developers
+// Copyright (c) 2017-2018 The Salvage developers
 // Copyright (c) 2019 The Salvage developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -81,7 +81,7 @@ bool fAlerts = DEFAULT_ALERTS;
 unsigned int nStakeMinAge = 60 * 60;
 int64_t nReserveBalance = 0;
 
-/** Fees smaller than this (in uscn) are considered zero fee (for relaying and mining)
+/** Fees smaller than this (in usvg) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  */
@@ -1558,7 +1558,7 @@ int64_t GetBlockValue(int nHeight)
     }
 
     if (nHeight <= Params().LAST_POW_BLOCK())
-        nSubsidy = 13000 * COIN; // 200 blocks x 13,000 SCN = 2,600,000 SCN premine
+        nSubsidy = 13000 * COIN; // 200 blocks x 13,000 SVG = 2,600,000 SVG premine
     else if (nHeight <= 129600)
         nSubsidy = 2.5 * COIN;
     else if (nHeight > 129600 && nHeight <= 259200)
@@ -3080,7 +3080,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // SCN
+        // SVG
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -4513,7 +4513,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             return false;
         }
 
-        // SCN: We use certain sporks during IBD, so check to see if they are
+        // SVG: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
                 !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2);

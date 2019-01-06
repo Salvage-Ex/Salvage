@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The SecureCloud developers
+// Copyright (c) 2017 The Salvage developers
 // Copyright (c) 2019 The Salvage developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -116,7 +116,7 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
-        nModifierUpdateBlock = 1; // we use the version 2 for SCN
+        nModifierUpdateBlock = 1; // we use the version 2 for SVG
 
         const char* pszTimestamp = "SalvageNetwork has launched! - zabtc 25/10/2018";
         CMutableTransaction txNew;

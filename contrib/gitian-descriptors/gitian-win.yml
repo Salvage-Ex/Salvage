@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/salvage/salvage.git"
+- "url": "https://github.com/Salvage-Ex/Salvage.git"
   "dir": "salvage"
 files: []
 script: |

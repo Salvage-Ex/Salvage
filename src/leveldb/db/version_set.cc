@@ -912,9 +912,9 @@ Status VersionSet::Recover() {
   }
   current.resize(current.size() - 1);
 
-  std::string dscname = dbname_ + "/" + current;
+  std::string dsvgame = dbname_ + "/" + current;
   SequentialFile* file;
-  s = env_->NewSequentialFile(dscname, &file);
+  s = env_->NewSequentialFile(dsvgame, &file);
   if (!s.ok()) {
     return s;
   }
