@@ -2,8 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Salvage developers
-// Copyright (c) 2019 The Salvage developers
+// Copyright (c) 2018-2019 The Salvage developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -358,7 +357,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         nLastBlockTx = nBlockTx;
         nLastBlockSize = nBlockSize;
-        LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
+        //LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
 
         // Compute final coinbase transaction.
         pblock->vtx[0].vin[0].scriptSig = CScript() << nHeight << OP_0;
@@ -534,8 +533,8 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running SalvageMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
-            ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
+        //LogPrintf("Running SalvageMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        //    ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
         // Search
