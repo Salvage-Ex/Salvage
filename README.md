@@ -10,8 +10,8 @@
 #### Algorithm: - *Quark-hash* 
 #### Masternode collateral - *1,200 SVG*  
 #### Features: - *SwiftTX, budget, treausury and masternode governance is enabled* 
-#### RPC Port: - *9192* 
-#### P2P Port: - *9191* 
+#### RPC Port: - *9923* 
+#### P2P Port: - *9922* 
 
 
 #### Block 0 - 200 : -- 13,000 SVG (Swap coins)
