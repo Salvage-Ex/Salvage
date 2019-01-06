@@ -62,12 +62,12 @@
         <translation>Adrese za primanje</translation>
     </message>
     <message>
-        <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše KYD adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše SVG adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše KYD adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše SVG adrese za primanje uplata. Preporuča se upotreba nove adrese primanja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
-        <translation>KYD se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše KYD od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>SVG will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>SVG se sada zatvara kako bi dovršio proces šifriranja. Ne zaboravite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše SVG od krađe zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Jeste li sigurni da želite šifrirati svoj novčanik?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
-        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ KYD1!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Upozorenje: Ako šifrirate svoj novčanik i izgubite vašu zaporku, vi ćete1 IZGUBITI ĆE TE SAV VAŠ SVG1!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -397,8 +397,8 @@
         <translation>Pregledajte povijest transakcija</translation>
     </message>
     <message>
-        <source>Privacy Actions for zKYD</source>
-        <translation>Aktivnosti na privatnost za zKYD</translation>
+        <source>Privacy Actions for zSVG</source>
+        <translation>Aktivnosti na privatnost za zSVG</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -601,16 +601,16 @@
         <translation>Alatna traka kartica</translation>
     </message>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
-        <source>Send coins to a KYD address</source>
-        <translation>Pošaljite kovanice na KYD adresu</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Pošaljite kovanice na SVG adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and kyd: URIs)</source>
-        <translation>Zahtjev za plaćanja (generira QR kodove i kyd: URI)</translation>
+        <source>Request payments (generates QR codes and svg: URIs)</source>
+        <translation>Zahtjev za plaćanja (generira QR kodove i svg: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -625,24 +625,24 @@
         <translation>Pregledajte masternode</translation>
     </message>
     <message>
-        <source>&amp;About KYD Core</source>
-        <translation>&amp; O KYD Coreu</translation>
+        <source>&amp;About SVG Core</source>
+        <translation>&amp; O SVG Coreu</translation>
     </message>
     <message>
-        <source>Show information about KYD Core</source>
-        <translation>Prikaz informacija o KYD Coreu</translation>
+        <source>Show information about SVG Core</source>
+        <translation>Prikaz informacija o SVG Coreu</translation>
     </message>
     <message>
-        <source>Modify configuration options for KYD</source>
-        <translation>Izmijenite opcije konfiguracije za KYD</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Izmijenite opcije konfiguracije za SVG</translation>
     </message>
     <message>
-        <source>Sign messages with your KYD addresses to prove you own them</source>
-        <translation>Potpišite poruke s vašim KYD adresama kako biste dokazali da ih posjedujete</translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Potpišite poruke s vašim SVG adresama kako biste dokazali da ih posjedujete</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified KYD addresses</source>
-        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim KYD adresama</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Potvrdite poruke kako biste bili sigurni da su potpisani s određenim SVG adresama</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -653,8 +653,8 @@
         <translation>Šifriranje i dešifriranje privatnih ključeva pomoću zaporke</translation>
     </message>
     <message>
-        <source>KYD Core client</source>
-        <translation>KYD Core klijent</translation>
+        <source>SVG Core client</source>
+        <translation>SVG Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -751,15 +751,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1045,8 +1045,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 KYD</source>
-        <translation>0 KYD</translation>
+        <source>0 SVG</source>
+        <translation>0 SVG</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -1111,15 +1111,15 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>KYD Core is shutting down...</source>
-        <translation>KYD Core se gasi...</translation>
+        <source>SVG Core is shutting down...</source>
+        <translation>SVG Core se gasi...</translation>
     </message>
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The KYD address to sign the message with</source>
-        <translation>KYD adresa za potpisivanje poruke s</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>SVG adresa za potpisivanje poruke s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1142,16 +1142,16 @@
         <translation>Kopirajte trenutačni potpis u međuspremnik sustava</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this KYD address</source>
-        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove KYD adrese</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Potpišite poruku da biste dokazali da ste vlasnik ove SVG adrese</translation>
     </message>
     <message>
-        <source>The KYD address the message was signed with</source>
-        <translation>KYD adresa s kojom je potpisana poruka</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>SVG adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified KYD address</source>
-        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom KYD adresom</translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Potvrdite poruku kako biste bili sigurni da je potpisan s navedenom SVG adresom</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1197,8 +1197,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1345,14 +1345,14 @@
     </message>
     </context>
 <context>
-    <name>ZKydControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>kyd-core</name>
+    <name>svg-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

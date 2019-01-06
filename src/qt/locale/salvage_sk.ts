@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše KYD adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše SVG adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše KYD adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše SVG adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
-        <translation>KYD sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše KYD pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>SVG will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>SVG sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše SVG pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY KYD &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY SVG &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -569,16 +569,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
-        <source>Send coins to a KYD address</source>
-        <translation>Odoslať mince na adresu KYD</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Odoslať mince na adresu SVG</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and kyd: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a kyd: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and svg: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a svg: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -589,24 +589,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About KYD Core</source>
-        <translation>O KYD Core</translation>
+        <source>&amp;About SVG Core</source>
+        <translation>O SVG Core</translation>
     </message>
     <message>
-        <source>Show information about KYD Core</source>
-        <translation>Zobraziť informácie o KYD Core</translation>
+        <source>Show information about SVG Core</source>
+        <translation>Zobraziť informácie o SVG Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for KYD</source>
-        <translation>Zmeňte možnosti konfigurácie pre KYD</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Zmeňte možnosti konfigurácie pre SVG</translation>
     </message>
     <message>
-        <source>Sign messages with your KYD addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy KYD, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy SVG, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified KYD addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými KYD adresami</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými SVG adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -637,8 +637,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a KYD: URI or payment request</source>
-        <translation>Otvorte KYD: URI alebo žiadosť o platbu</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Otvorte SVG: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -649,12 +649,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the KYD Core help message to get a list with possible KYD command-line options</source>
-        <translation>Zobraziť pomocnú správu programu KYD Core a získajte zoznam možností príkazového riadka KYD</translation>
+        <source>Show the SVG Core help message to get a list with possible SVG command-line options</source>
+        <translation>Zobraziť pomocnú správu programu SVG Core a získajte zoznam možností príkazového riadka SVG</translation>
     </message>
     <message>
-        <source>KYD Core client</source>
-        <translation>KYD Core klient</translation>
+        <source>SVG Core client</source>
+        <translation>SVG Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -776,8 +776,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (kyd.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (kyd.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (svg.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (svg.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -867,15 +867,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1114,8 +1114,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The KYD address to sign the message with</source>
-        <translation>Adresa KYD, ktorou chcete správu podpísať</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>Adresa SVG, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1138,16 +1138,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this KYD address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto KYD adresy</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto SVG adresy</translation>
     </message>
     <message>
-        <source>The KYD address the message was signed with</source>
-        <translation>KYD adresa, ktorou bola správa podpísaná</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>SVG adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified KYD address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou KYD adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou SVG adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1185,8 +1185,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     </context>
 <context>
@@ -1281,10 +1281,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZKydControlDialog</name>
+    <name>ZSvgControlDialog</name>
     </context>
 <context>
-    <name>kyd-core</name>
+    <name>svg-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
+        <source>SVG will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -326,12 +326,12 @@
     </message>
     <message>
         <location line="-424"/>
-        <source>Enter a KYD Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a SVG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>The KYD address to encrypt</source>
+        <source>The SVG address to encrypt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -375,7 +375,7 @@
     </message>
     <message>
         <location line="+18"/>
-        <source>Encrypt the private key for this KYD address</source>
+        <source>Encrypt the private key for this SVG address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -557,7 +557,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zKYD</source>
+        <source>Privacy Actions for zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -832,17 +832,17 @@
     <message>
         <location line="-446"/>
         <location line="+928"/>
-        <source>KYD Core</source>
+        <source>SVG Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-726"/>
-        <source>Send coins to a KYD address</source>
+        <source>Send coins to a SVG address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and kyd: URIs)</source>
+        <source>Request payments (generates QR codes and svg: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -862,27 +862,27 @@
     </message>
     <message>
         <location line="+31"/>
-        <source>&amp;About KYD Core</source>
+        <source>&amp;About SVG Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about KYD Core</source>
+        <source>Show information about SVG Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for KYD</source>
+        <source>Modify configuration options for SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your KYD addresses to prove you own them</source>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified KYD addresses</source>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -922,7 +922,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Open a KYD: URI or payment request</source>
+        <source>Open a SVG: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -937,17 +937,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the KYD Core help message to get a list with possible KYD command-line options</source>
+        <source>Show the SVG Core help message to get a list with possible SVG command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+233"/>
-        <source>KYD Core client</source>
+        <source>SVG Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+212"/>
-        <source>%n active connection(s) to KYD network</source>
+        <source>%n active connection(s) to SVG network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1153,7 +1153,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+480"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (kyd.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (svg.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1453,7 +1453,7 @@ Address: %4
     </message>
     <message>
         <location line="+8"/>
-        <source>Can vary +/- %1 ukyd per input.</source>
+        <source>Can vary +/- %1 usvg per input.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1522,7 +1522,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid KYD address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid SVG address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1578,7 +1578,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>KYD Core</source>
+        <source>SVG Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1589,7 +1589,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About KYD Core</source>
+        <source>About SVG Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1647,17 +1647,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to KYD Core.</source>
+        <source>Welcome to SVG Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where KYD Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where SVG Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>KYD Core will download and store a copy of the KYD block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>SVG Core will download and store a copy of the SVG block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1672,7 +1672,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>KYD Core</source>
+        <source>SVG Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1848,8 +1848,8 @@ Address: %4
     </message>
     <message>
         <location line="-106"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other KYD addresses after it matures.
-To Add: enter percentage to give and KYD address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SVG addresses after it matures.
+To Add: enter percentage to give and SVG address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -2125,7 +2125,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send KYD to</source>
+        <source>Add destinations to send SVG to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2248,12 +2248,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 KYD</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 KYD</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2263,12 +2263,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 KYD to anonymize 10000 KYD</source>
+        <source>This option is the quickest and will cost about ~0.025 SVG to anonymize 10000 SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 KYD to anonymize 10000 KYD</source>
+        <source>This option is moderately fast and will cost about 0.05 SVG to anonymize 10000 SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2278,7 +2278,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 KYD per 10000 KYD you anonymize.</source>
+        <source>0.1 SVG per 10000 SVG you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2290,17 +2290,17 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening KYD&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening SVG&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening KYD&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening SVG&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening KYD&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening SVG&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2376,7 +2376,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the KYD client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the SVG client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2401,12 +2401,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-210"/>
-        <source>Automatically start KYD after logging in to the system.</source>
+        <source>Automatically start SVG after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start KYD on system login</source>
+        <source>&amp;Start SVG on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2441,13 +2441,13 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting KYD.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting SVG.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/kyd-project/kyd-project-translations</source>
+https://www.transifex.com/svg-project/svg-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2457,33 +2457,33 @@ https://www.transifex.com/kyd-project/kyd-project-translations</source>
     </message>
     <message>
         <location line="-169"/>
-        <source>Enable automatic minting of KYD units to zKYD</source>
+        <source>Enable automatic minting of SVG units to zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zKYD Automint</source>
+        <source>Enable zSVG Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Percentage of incoming KYD which get automatically converted to zKYD via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming SVG which get automatically converted to zSVG via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zKYD</source>
+        <source>Percentage of autominted zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough KYD for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough SVG for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zKYD Denomination</source>
+        <source>Preferred Automint zSVG Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2493,7 +2493,7 @@ https://www.transifex.com/kyd-project/kyd-project-translations</source>
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the KYD network through a SOCKS5 proxy.</source>
+        <source>Connect to the SVG network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2692,7 +2692,7 @@ https://www.transifex.com/kyd-project/kyd-project-translations</source>
     </message>
     <message>
         <location line="+71"/>
-        <source>KYD Balance</source>
+        <source>SVG Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2724,19 +2724,19 @@ https://www.transifex.com/kyd-project/kyd-project-translations</source>
     <message>
         <location line="+16"/>
         <location line="+19"/>
-        <source>Your current KYD balance, unconfirmed and immature transactions included</source>
+        <source>Your current SVG balance, unconfirmed and immature transactions included</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>zKYD Balance</source>
+        <source>zSVG Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+53"/>
         <location line="+17"/>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zKYD are spendable.</source>
+These zSVG are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2751,7 +2751,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="-725"/>
         <location line="+852"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the KYD network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SVG network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2809,7 +2809,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked KYD or Masternode collaterals. These are excluded from zKYD minting.</source>
+        <source>Locked SVG or Masternode collaterals. These are excluded from zSVG minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2825,7 +2825,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+58"/>
         <location line="+19"/>
-        <source>Your current zKYD balance, unconfirmed and immature zKYD included.</source>
+        <source>Your current zSVG balance, unconfirmed and immature zSVG included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2841,7 +2841,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+106"/>
-        <source>Current percentage of zKYD.
+        <source>Current percentage of zSVG.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -2853,13 +2853,13 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     </message>
     <message>
         <location line="+1"/>
-        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in kyd.conf.</source>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in svg.conf.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>AutoMint is currently disabled.
-To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in kyd.conf</source>
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in svg.conf</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2899,12 +2899,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start kyd: click-to-pay handler</source>
+        <source>Cannot start svg: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid KYD address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid SVG address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3012,7 +3012,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+10"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the KYD network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SVG network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3032,7 +3032,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="-371"/>
         <location line="+651"/>
-        <source>zKYD</source>
+        <source>zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3047,7 +3047,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+19"/>
-        <source>0.000 000 00 KYD</source>
+        <source>0.000 000 00 SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3098,17 +3098,17 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+182"/>
         <location line="+52"/>
-        <source>Enter an amount of Kyd to convert to zKYD</source>
+        <source>Enter an amount of Svg to convert to zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+301"/>
-        <source>zKYD Control</source>
+        <source>zSVG Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zKYD Selected:</source>
+        <source>zSVG Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3136,7 +3136,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zKYD for spending</source>
+        <source>Available (mature and spendable) zSVG for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3146,9 +3146,9 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zKYD for spending
+        <source>Available (mature and spendable) zSVG for spending
 
-zKYD are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+zSVG are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3163,7 +3163,7 @@ zKYD are mature when they have more than 20 confirmations AND more than 2 mints 
         <location line="+31"/>
         <location line="+31"/>
         <location line="+31"/>
-        <source>0 zKYD</source>
+        <source>0 zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3188,7 +3188,7 @@ zKYD are mature when they have more than 20 confirmations AND more than 2 mints 
     </message>
     <message>
         <location line="+27"/>
-        <source>The KYD address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The SVG address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3254,7 +3254,7 @@ zKYD are mature when they have more than 20 confirmations AND more than 2 mints 
     <message>
         <location line="+68"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zKYD</source>
+        <source>Total Balance including unconfirmed and immature zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3287,14 +3287,14 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+40"/>
-        <source>Show the current status of automatic zKYD minting.
+        <source>Show the current status of automatic zSVG minting.
 
 To change the status (restart required):
-- enable: add &apos;enablezeromint=1&apos; to kyd.conf
-- disable: add &apos;enablezeromint=0&apos; to kyd.conf
+- enable: add &apos;enablezeromint=1&apos; to svg.conf
+- disable: add &apos;enablezeromint=0&apos; to svg.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zKYD
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSVG
 
 </source>
         <translation type="unfinished"></translation>
@@ -3547,12 +3547,12 @@ Maximum allowed: </source>
     </message>
     <message>
         <location line="+34"/>
-        <source>zKYD Spend #: </source>
+        <source>zSVG Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>zKYD Mint</source>
+        <source>zSVG Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3573,13 +3573,13 @@ Maximum allowed: </source>
     <message>
         <location line="+12"/>
         <location line="+4"/>
-        <source>zKYD is currently disabled due to maintenance.</source>
+        <source>zSVG is currently disabled due to maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-639"/>
         <location line="+111"/>
-        <source>zKYD is currently undergoing maintenance.</source>
+        <source>zSVG is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3690,7 +3690,7 @@ Maximum allowed: </source>
     </message>
     <message>
         <location line="+0"/>
-        <source> zKYD in </source>
+        <source> zSVG in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3726,7 +3726,7 @@ Maximum allowed: </source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Invalid KYD Address</source>
+        <source>Invalid SVG Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3767,13 +3767,13 @@ Maximum allowed: </source>
     <message>
         <location line="+24"/>
         <location line="+32"/>
-        <source>Version 1 zKYD require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zSVG require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-31"/>
         <location line="+32"/>
-        <source>Failed to spend zKYD</source>
+        <source>Failed to spend zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3801,7 +3801,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message numerus="yes">
         <location line="+336"/>
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of KYD to convert to zKYD</comment>
+        <comment>Enter an amount of SVG to convert to zSVG</comment>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -3857,7 +3857,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a KYD address (e.g. %1)</source>
+        <source>Enter a SVG address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4060,7 +4060,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the KYD debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the SVG debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4232,7 +4232,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zKYD Backup Path:</source>
+        <source>Custom zSVG Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4332,7 +4332,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the KYD RPC console.</source>
+        <source>Welcome to the SVG RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4496,7 +4496,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the KYD network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the SVG network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4506,7 +4506,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+124"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the KYD network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the SVG network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4794,7 +4794,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 KYD</source>
+        <source>0 SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4864,18 +4864,18 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+907"/>
-        <source>If the custom fee is set to 1000 uKYDs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uKYDs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uKYDs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uSVGs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uSVGs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uSVGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uKYDs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uKYDs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uKYDs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uSVGs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uSVGs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uSVGs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for KYD transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for SVG transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4935,7 +4935,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized KYD</source>
+        <source>Anonymized SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4995,7 +4995,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+629"/>
-        <source>Warning: Invalid KYD address</source>
+        <source>Warning: Invalid SVG address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5129,7 +5129,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>The KYD address to send the payment to</source>
+        <source>The SVG address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5183,7 +5183,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the KYD: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the KYD network.</source>
+        <source>A message that was attached to the SVG: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the SVG network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5218,7 +5218,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>KYD Core is shutting down...</source>
+        <source>SVG Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5246,7 +5246,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>The KYD address to sign the message with</source>
+        <source>The SVG address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5288,17 +5288,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>Sign the message to prove you own this KYD address</source>
+        <source>Sign the message to prove you own this SVG address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+103"/>
-        <source>The KYD address the message was signed with</source>
+        <source>The SVG address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>Verify the message to ensure it was signed with the specified KYD address</source>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5413,7 +5413,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>KYD Core</source>
+        <source>SVG Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5433,7 +5433,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>The KYD Core developers</source>
+        <source>The SVG Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5810,12 +5810,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>KYD Stake</source>
+        <source>SVG Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>zKYD Stake</source>
+        <source>zSVG Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5840,37 +5840,37 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted KYD to zKYD</source>
+        <source>Converted SVG to zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zKYD</source>
+        <source>Spent zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received KYD from zKYD</source>
+        <source>Received SVG from zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zKYD from zKYD Spend</source>
+        <source>Minted Change as zSVG from zSVG Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zKYD to KYD</source>
+        <source>Converted zSVG to SVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+56"/>
-        <source>Anonymous (zKYD Transaction)</source>
+        <source>Anonymous (zSVG Transaction)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Anonymous (zKYD Stake)</source>
+        <source>Anonymous (zSVG Stake)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6134,12 +6134,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-280"/>
-        <source>Received KYD from zKYD</source>
+        <source>Received SVG from zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Zerocoin Spend, Change in zKYD</source>
+        <source>Zerocoin Spend, Change in zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6186,7 +6186,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 KYD.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 SVG.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6224,10 +6224,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZKydControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
-        <location filename="../forms/zkydcontroldialog.ui" line="+20"/>
-        <source>Select zKYD to Spend</source>
+        <location filename="../forms/zsvgcontroldialog.ui" line="+20"/>
+        <source>Select zSVG to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6243,7 +6243,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-7"/>
-        <source>zKYD</source>
+        <source>zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6258,9 +6258,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>kyd-core</name>
+    <name>svg-core</name>
     <message>
-        <location filename="../kydstrings.cpp" line="+15"/>
+        <location filename="../svgstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -6291,7 +6291,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. KYD Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. SVG Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6326,17 +6326,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+5"/>
-        <source>Enable automatic wallet backups triggered after each zKYD minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zSVG minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable or disable staking functionality for KYD inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for SVG inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zKYD inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zSVG inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6381,12 +6381,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in KYD/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in SVG/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in KYD/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in SVG/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6511,7 +6511,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to bind to %s on this computer. KYD Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. SVG Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6521,12 +6521,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 KYD.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 SVG.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 KYD.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 SVG.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6546,7 +6546,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong KYD Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong SVG Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6736,7 +6736,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The KYD Core Developers</source>
+        <source>Copyright (C) 2015-%i The SVG Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6846,7 +6846,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of KYD Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of SVG Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6926,7 +6926,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in KYD/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in SVG/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7001,7 +7001,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. KYD Core is shutting down.</source>
+        <source>Initialization sanity check failed. SVG Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7091,7 +7091,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+9"/>
-        <source>Reindex the KYD and zKYD money supply statistics</source>
+        <source>Reindex the SVG and zSVG money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7138,7 +7138,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all KYD specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all SVG specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7183,7 +7183,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify custom backup path to add a copy of any automatic zKYD backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zSVG backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7808,7 +7808,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zKYD wallet...</source>
+        <source>Syncing zSVG wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7993,7 +7993,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zKYD</source>
+        <source>Value is below the smallest available denomination (= 1) of zSVG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8013,7 +8013,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Version 1 zKYD require a security level of 100 to successfully spend.</source>
+        <source>Version 1 zSVG require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8028,7 +8028,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart KYD Core to complete</source>
+        <source>Wallet needed to be rewritten: restart SVG Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

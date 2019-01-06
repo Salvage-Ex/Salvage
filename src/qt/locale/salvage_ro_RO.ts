@@ -189,9 +189,9 @@
     </message>
     </context>
 <context>
-    <name>ZKydControlDialog</name>
+    <name>ZSvgControlDialog</name>
     </context>
 <context>
-    <name>kyd-core</name>
+    <name>svg-core</name>
     </context>
 </TS>

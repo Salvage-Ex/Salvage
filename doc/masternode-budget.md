@@ -20,12 +20,12 @@ mnbudget prepare \<proposal-name\> \<url\> \<payment_count\> \<block_start\> \<s
 
 Example:
 ```
-mnbudget prepare cool-project http://www.cool-project/one.json 12 100000 y6R9oN12KnB9zydzTLc3LikD9cCjjQzYG7 1200 true
+mnbudget prepare cool-project http://www.cool-project/one.json 12 100000 y6R9oN12KnB9zydzTLc3LikD9cCjjQzYG7 5000 true
 ```
 
 Output: `464a0eb70ea91c94295214df48c47baa72b3876cfb658744aaf863c7b5bf1ff0` - This is the collateral hash, copy this output for the next step
 
-In this transaction we prepare collateral for "_cool-project_". This proposal will pay _1200_ SVG, _12_ times over the course of a year totaling _24000_ SVG.
+In this transaction we prepare collateral for "_cool-project_". This proposal will pay _5000_ SVG, _12_ times over the course of a year totaling _60000_ SVG.
 
 **Warning -- if you change any fields within this command, the collateral transaction will become invalid.**
 
@@ -36,7 +36,7 @@ mnbudget submit \<proposal-name\> \<url\> \<payment_count\> \<block_start\> \<sa
 
 Example:
 ```
-mnbudget submit cool-project http://www.cool-project/one.json 12 100000 y6R9oN12KnB9zydzTLc3LikD9cCjjQzYG7 1200 464a0eb70ea91c94295214df48c47baa72b3876cfb658744aaf863c7b5bf1ff0
+mnbudget submit cool-project http://www.cool-project/one.json 12 100000 y6R9oN12KnB9zydzTLc3LikD9cCjjQzYG7 5000 464a0eb70ea91c94295214df48c47baa72b3876cfb658744aaf863c7b5bf1ff0
 ```
 
 Output: `a2b29778ae82e45a973a94309ffa6aa2e2388b8f95b39ab3739f0078835f0491` - This is your proposal hash, which other nodes will use to vote on it
@@ -68,8 +68,8 @@ Output:
     "Yeas" : 0,
     "Nays" : 0,
     "Abstains" : 0,
-    "TotalPayment" : 14400.00000000,
-    "MonthlyPayment" : 1200.00000000,
+    "TotalPayment" : 60000.00000000,
+    "MonthlyPayment" : 5000.00000000,
     "IsValid" : true,
     "fValid" : true
 }
@@ -89,7 +89,7 @@ Output: `Voted successfully` - Your vote has been submitted and accepted.
 Make it into the budget
 ------------------------
 
-After you get enough votes, execute `mnbudget projection` to see if you made it into the budget. If you the budget was finalized at this moment which proposals would be in it. Note: Proposals must be active at least 1 day on the network and receive 10% of the masternode network in yes votes in order to qualify (E.g. if there is 2500 masternodes, you will need 250 yes votes.)
+After you get enough votes, execute `mnbudget projection` to see if you made it into the budget. If you the budget was finalized at this moment which proposals would be in it. Note: Proposals must be active at least 1 day on the network and receive 10% of the masternode network in yes votes in order to qualify (E.g. if there is 5000 masternodes, you will need 250 yes votes.)
 
 Example:
 ```
@@ -112,8 +112,8 @@ Output:
 	    "Yeas" : 33,
 	    "Nays" : 0,
 	    "Abstains" : 0,
-	    "TotalPayment" : 14400.00000000,
-	    "MonthlyPayment" : 1200.00000000,
+	    "TotalPayment" : 60000.00000000,
+	    "MonthlyPayment" : 5000.00000000,
 	    "IsValid" : true,
 	    "fValid" : true
 	}
@@ -138,7 +138,7 @@ Finalized budget
 Get paid
 ------------------------
 
-When block `1000000` is reached you'll receive a payment for `1200` SVG.
+When block `1000000` is reached you'll receive a payment for `5000` SVG.
 
 
 RPC Commands

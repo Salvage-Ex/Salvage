@@ -321,10 +321,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>ZKydControlDialog</name>
+    <name>ZSvgControlDialog</name>
     </context>
 <context>
-    <name>kyd-core</name>
+    <name>svg-core</name>
     <message>
         <source>Information</source>
         <translation>जानकारी</translation>

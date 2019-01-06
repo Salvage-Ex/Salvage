@@ -62,12 +62,12 @@
         <translation>Gavimo adresai</translation>
     </message>
     <message>
-        <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tai jūsų KYD adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tai jūsų SVG adresai mokėjimų išsiuntimams. Visada patikrinkite sumą ir gavėjo adresą prieš siųsdami monetas.</translation>
     </message>
     <message>
-        <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Tai jūsų KYD adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Tai jūsų SVG adresai mokėjimų gavimams. Rekomenduojama naudoti naują adresą kiekvienam pavedimui.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Patvirtinkite piniginės užšifravimą.</translation>
     </message>
     <message>
-        <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
-        <translation>Dabar KYD išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų KYD nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
+        <source>SVG will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>Dabar SVG išsijungs, kad būtų užbaigtas šifravimo procesas. Atminkite, kad jūsų piniginės užšifravimas negali visiškai apsaugoti jūsų SVG nuo kenkėjiškų programų, užkrėsto jūsų kompiuterio.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ar tikrai norite užšifruoti savo piniginę?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
-        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO KYD&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Įspėjimas: jei užšifruosite savo piniginę ir prarasite slaptafrazę, jūs &lt;b&gt;PRARASITE VISUS SAVO SVG&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Adresas:</translation>
     </message>
     <message>
-        <source>Enter a KYD Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Įveskite KYD adresą, kurį norėtumėte užšifruoti naudojant BIP 38. Vidiniame laukelyje įrašykite slaptą frazę. Paspauskite užšifruoti, jei norite gauti užšifruotą privatųjį raktą.</translation>
+        <source>Enter a SVG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Įveskite SVG adresą, kurį norėtumėte užšifruoti naudojant BIP 38. Vidiniame laukelyje įrašykite slaptą frazę. Paspauskite užšifruoti, jei norite gauti užšifruotą privatųjį raktą.</translation>
     </message>
     <message>
-        <source>The KYD address to encrypt</source>
-        <translation>KYD adresas, kurį norite užšifruoti</translation>
+        <source>The SVG address to encrypt</source>
+        <translation>SVG adresas, kurį norite užšifruoti</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this KYD address</source>
-        <translation>Užšifruoti šio KYD adreso privatų raktą</translation>
+        <source>Encrypt the private key for this SVG address</source>
+        <translation>Užšifruoti šio SVG adreso privatų raktą</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Naršyti pavedimų istoriją</translation>
     </message>
     <message>
-        <source>Privacy Actions for zKYD</source>
-        <translation>zKYD Saugumo Veiksmai </translation>
+        <source>Privacy Actions for zSVG</source>
+        <translation>zSVG Saugumo Veiksmai </translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,16 +645,16 @@
         <translation>Skirtukų įrankių juosta</translation>
     </message>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
-        <source>Send coins to a KYD address</source>
-        <translation>Siųsti monetas į KYD adresą</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Siųsti monetas į SVG adresą</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and kyd: URIs)</source>
-        <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir kyd URI)</translation>
+        <source>Request payments (generates QR codes and svg: URIs)</source>
+        <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir svg URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Naršyti masternod'us</translation>
     </message>
     <message>
-        <source>&amp;About KYD Core</source>
-        <translation>&amp;Apie KYD Core</translation>
+        <source>&amp;About SVG Core</source>
+        <translation>&amp;Apie SVG Core</translation>
     </message>
     <message>
-        <source>Show information about KYD Core</source>
-        <translation>Rodyti informaciją apie KYD Core</translation>
+        <source>Show information about SVG Core</source>
+        <translation>Rodyti informaciją apie SVG Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for KYD</source>
-        <translation>Keisti KYD konfigūravimo parinktis</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Keisti SVG konfigūravimo parinktis</translation>
     </message>
     <message>
-        <source>Sign messages with your KYD addresses to prove you own them</source>
-        <translation>Pasirašykite pranešimus naudodami savo KYD adresus, kad įrodytumėte, kad juos turite</translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Pasirašykite pranešimus naudodami savo SVG adresus, kad įrodytumėte, kad juos turite</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified KYD addresses</source>
-        <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais KYD adresais</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Patvirtinkite pranešimus, kad jie būtų pasirašyti su nurodytais SVG adresais</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Atidaryti Masternod'o konfigūracijos failą</translation>
     </message>
     <message>
-        <source>Open a KYD: URI or payment request</source>
-        <translation>Atidaryti KYD: URI arba mokėjimo prašymą</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Atidaryti SVG: URI arba mokėjimo prašymą</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Blokų naršyklės langas</translation>
     </message>
     <message>
-        <source>Show the KYD Core help message to get a list with possible KYD command-line options</source>
-        <translation>Rodyti KYD Core žinyną, kad gautumėte sąrašą su galimomis KYD komandinės eilutės parinktimis</translation>
+        <source>Show the SVG Core help message to get a list with possible SVG command-line options</source>
+        <translation>Rodyti SVG Core žinyną, kad gautumėte sąrašą su galimomis SVG komandinės eilutės parinktimis</translation>
     </message>
     <message>
-        <source>KYD Core client</source>
-        <translation>KYD Core piniginė</translation>
+        <source>SVG Core client</source>
+        <translation>SVG Core piniginė</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to KYD network</source>
-        <translation><numerusform>%n aktyvių prisijungimų KYD tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų KYD tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų KYD tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų KYD tinkle ()</numerusform></translation>
+        <source>%n active connection(s) to SVG network</source>
+        <translation><numerusform>%n aktyvių prisijungimų SVG tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų SVG tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų SVG tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų SVG tinkle ()</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -892,8 +892,8 @@ MultiSend: %1</translation>
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (kyd.conf).</source>
-        <translation>Ne visi pavedimai bus rodomi. Norėdami peržiūrėti visus pavedimus, reikia nustatyti txindex = 1 konfigūracijos faile (kyd.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (svg.conf).</source>
+        <translation>Ne visi pavedimai bus rodomi. Norėdami peržiūrėti visus pavedimus, reikia nustatyti txindex = 1 konfigūracijos faile (svg.conf).</translation>
     </message>
 </context>
 <context>
@@ -1122,8 +1122,8 @@ MultiSend: %1</translation>
         <translation>Ši etiketė taps raudona, jei gavėjas gaus sumą mažesnę už %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ukyd per input.</source>
-        <translation>Gali skirtis +/- %1 ukyd kiekvienoje įvestyje.</translation>
+        <source>Can vary +/- %1 usvg per input.</source>
+        <translation>Gali skirtis +/- %1 usvg kiekvienoje įvestyje.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1177,8 +1177,8 @@ MultiSend: %1</translation>
         <translation>Keisti siuntimo adresą</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid KYD address.</source>
-        <translation>Įvestas adresas "%1" nėra galiojantis KYD adresas.</translation>
+        <source>The entered address "%1" is not a valid SVG address.</source>
+        <translation>Įvestas adresas "%1" nėra galiojantis SVG adresas.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1223,16 +1223,16 @@ MultiSend: %1</translation>
         <translation>versija</translation>
     </message>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bitai)</translation>
     </message>
     <message>
-        <source>About KYD Core</source>
-        <translation>Apie KYD Core</translation>
+        <source>About SVG Core</source>
+        <translation>Apie SVG Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1278,16 +1278,16 @@ MultiSend: %1</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to KYD Core.</source>
-        <translation>Sveiki atvykę į KYD Core</translation>
+        <source>Welcome to SVG Core.</source>
+        <translation>Sveiki atvykę į SVG Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where KYD Core will store its data.</source>
-        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur KYD Core saugos savo duomenis.</translation>
+        <source>As this is the first time the program is launched, you can choose where SVG Core will store its data.</source>
+        <translation>Kadangi programa paleista pirmą kartą, galite pasirinkti kur SVG Core saugos savo duomenis.</translation>
     </message>
     <message>
-        <source>KYD Core will download and store a copy of the KYD block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>KYD Core atsisiųs ir saugos KYD blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
+        <source>SVG Core will download and store a copy of the SVG block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>SVG Core atsisiųs ir saugos SVG blockchain'o kopiją. Šiame kataloge bus saugomas ne mažesnis kaip %1GB duomenų kiekis, kuris laikui bėgant augs. Piniginė taip pat bus saugoma šiame kataloge.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1298,8 +1298,8 @@ MultiSend: %1</translation>
         <translation>Naudoti pasirinktą duomenų katalogą:</translation>
     </message>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1440,12 +1440,12 @@ MultiSend: %1</translation>
         <translation>Įveskite adresą kuriam norite siųsti</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other KYD addresses after it matures.
-To Add: enter percentage to give and KYD address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SVG addresses after it matures.
+To Add: enter percentage to give and SVG address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus KYD adresus.
-Norėdami pridėti: įveskite pateiktą procentą ir KYD adresą, kurį norite pridėti prie MultiSend sąrašo.
+        <translation>MultiSend leidžia automatiškai išsiųsti iki 100% jūsų stake'inimo ar masternod'ų atlygio į kitus SVG adresus.
+Norėdami pridėti: įveskite pateiktą procentą ir SVG adresą, kurį norite pridėti prie MultiSend sąrašo.
 Norėdami ištrinti: įveskite adresą, kurį norite ištrinti, ir paspauskite ištrinti
 MultiSend nebus aktyvuotas, nebent paspausite "Įjungti"</translation>
     </message>
@@ -1651,8 +1651,8 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Adresas / Suma:</translation>
     </message>
     <message>
-        <source>Add destinations to send KYD to</source>
-        <translation>Pridėkite vietas, kurioms norite siųsti KYD</translation>
+        <source>Add destinations to send SVG to</source>
+        <translation>Pridėkite vietas, kurioms norite siųsti SVG</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1750,48 +1750,48 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Pasirinkite privatumo lygmenį.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 KYD</source>
-        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 KYD</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 SVG</source>
+        <translation>Naudokite 2 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 SVG</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 KYD</source>
-        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 KYD</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 SVG</source>
+        <translation>Naudokite 8 atskirus masternod'us, kad sumaišytumėte lėšas iki 10 000 SVG</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Naudokite 16 atskirų masternod'ų</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 KYD to anonymize 10000 KYD</source>
-        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 KYD, kad anonimizuotų 10000 KYD</translation>
+        <source>This option is the quickest and will cost about ~0.025 SVG to anonymize 10000 SVG</source>
+        <translation>Ši parinktis yra greičiausia ir kainuos apie ~0.025 SVG, kad anonimizuotų 10000 SVG</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 KYD to anonymize 10000 KYD</source>
-        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 KYD, kad anonimizuotų 10000 KYD</translation>
+        <source>This option is moderately fast and will cost about 0.05 SVG to anonymize 10000 SVG</source>
+        <translation>Ši parinktis yra vidutiniškai greita ir kainuoja apie 0,05 SVG, kad anonimizuotų 10000 SVG</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tai yra lėčiausias ir saugiausias variantas. Maksimalus anonimiškumas kainuos.</translation>
     </message>
     <message>
-        <source>0.1 KYD per 10000 KYD you anonymize.</source>
-        <translation>0.1 KYD kas 1000 KYD kuriuos anonimizuosite.</translation>
+        <source>0.1 SVG per 10000 SVG you anonymize.</source>
+        <translation>0.1 SVG kas 1000 SVG kuriuos anonimizuosite.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Konfigūracija</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening KYD's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į paprastą (%1 ir 2 raundai). Bet kada galite tai pakeisti, atidarę KYD konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į paprastą (%1 ir 2 raundai). Bet kada galite tai pakeisti, atidarę SVG konfigūracijos ekraną.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening KYD's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į aukštą (%1 ir 8 raundai). Bet kada galite tai pakeisti, atidarę KYD konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į aukštą (%1 ir 8 raundai). Bet kada galite tai pakeisti, atidarę SVG konfigūracijos ekraną.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening KYD's configuration screen.</source>
-        <translation>Obfuscation buvo sėkmingai nustatytas į maksimumą (%1 ir 16 raundai). Bet kada galite tai pakeisti, atidarę KYD konfigūracijos ekraną.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening SVG's configuration screen.</source>
+        <translation>Obfuscation buvo sėkmingai nustatytas į maksimumą (%1 ir 16 raundai). Bet kada galite tai pakeisti, atidarę SVG konfigūracijos ekraną.</translation>
     </message>
 </context>
 <context>
@@ -1844,12 +1844,12 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Ekspertas</translation>
     </message>
     <message>
-        <source>Automatically start KYD after logging in to the system.</source>
-        <translation>Automatiškai paleisti KYD prisijungus prie sistemos.</translation>
+        <source>Automatically start SVG after logging in to the system.</source>
+        <translation>Automatiškai paleisti SVG prisijungus prie sistemos.</translation>
     </message>
     <message>
-        <source>&amp;Start KYD on system login</source>
-        <translation>&amp;Paleisti KYD sistemai įsijungiant</translation>
+        <source>&amp;Start SVG on system login</source>
+        <translation>&amp;Paleisti SVG sistemai įsijungiant</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1876,42 +1876,42 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting KYD.</source>
-        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "KYD".</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting SVG.</source>
+        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "SVG".</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/kyd-project/kyd-project-translations</source>
+https://www.transifex.com/svg-project/svg-project-translations</source>
         <translation>Trūksta kalbos arba vertimas nebaigtas? Padėkite prisidėdami prie vertimų čia: 
-https://www.transifex.com/kyd-project/kyd-project-translations</translation>
+https://www.transifex.com/svg-project/svg-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of KYD units to zKYD</source>
-        <translation>Įgalinti automatinį konvertavimą iš KYD į zKYD</translation>
+        <source>Enable automatic minting of SVG units to zSVG</source>
+        <translation>Įgalinti automatinį konvertavimą iš SVG į zSVG</translation>
     </message>
     <message>
-        <source>Enable zKYD Automint</source>
-        <translation>Įgalinti zKYD Automatinį nukaldinima</translation>
+        <source>Enable zSVG Automint</source>
+        <translation>Įgalinti zSVG Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming KYD which get automatically converted to zKYD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto KYD, kuris automatiškai bus konvertuotas į zKYD naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming SVG which get automatically converted to zSVG via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto SVG, kuris automatiškai bus konvertuotas į zSVG naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zKYD</source>
-        <translation>Automatiškai sukurtų zKYD procentas</translation>
+        <source>Percentage of autominted zSVG</source>
+        <translation>Automatiškai sukurtų zSVG procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zKYD Denomination</source>
-        <translation>Pageidautinas zKYD Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint zSVG Denomination</source>
+        <translation>Pageidautinas zSVG Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
-        <source>Connect to the KYD network through a SOCKS5 proxy.</source>
-        <translation>Jungtis prie KYD tinklo naudojant SOCKS5 tarpinį serverį.</translation>
+        <source>Connect to the SVG network through a SOCKS5 proxy.</source>
+        <translation>Jungtis prie SVG tinklo naudojant SOCKS5 tarpinį serverį.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2029,8 +2029,8 @@ https://www.transifex.com/kyd-project/kyd-project-translations</translation>
         <translation>Bendras balansas, įskaitant visas nepasiekiamas monetas.</translation>
     </message>
     <message>
-        <source>KYD Balance</source>
-        <translation>KYD Balansas</translation>
+        <source>SVG Balance</source>
+        <translation>SVG Balansas</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2053,18 +2053,18 @@ https://www.transifex.com/kyd-project/kyd-project-translations</translation>
         <translation>Dabartinis bendras užrakintas balansas tik žiūrėjimo adresuose</translation>
     </message>
     <message>
-        <source>Your current KYD balance, unconfirmed and immature transactions included</source>
-        <translation>Jūsų dabartinis KYD balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
+        <source>Your current SVG balance, unconfirmed and immature transactions included</source>
+        <translation>Jūsų dabartinis SVG balansas, įskaitant nepatvirtintus ir nesubrendusius sandorius</translation>
     </message>
     <message>
-        <source>zKYD Balance</source>
-        <translation>zKYD Balansas</translation>
+        <source>zSVG Balance</source>
+        <translation>zSVG Balansas</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zKYD are spendable.</source>
+These zSVG are spendable.</source>
         <translation>Subrendę: daugiau nei 20 patvirtinimų ir daugiau nei 1 konvertacija to pačio nominalo, kai jis jau buvo konvertuotas.
-Šiuos zKYD galima išleisti.</translation>
+Šiuos zSVG galima išleisti.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2073,8 +2073,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo po to, kai buvo konvertuotas.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the KYD network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su KYD tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SVG network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su SVG tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2117,8 +2117,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prienamas išleidimui:</translation>
     </message>
     <message>
-        <source>Locked KYD or Masternode collaterals. These are excluded from zKYD minting.</source>
-        <translation>Užrakinti KYD arba Masternode užstatai. Jie yra neįtraukti į zKYD kalimą.</translation>
+        <source>Locked SVG or Masternode collaterals. These are excluded from zSVG minting.</source>
+        <translation>Užrakinti SVG arba Masternode užstatai. Jie yra neįtraukti į zSVG kalimą.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2141,8 +2141,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>AutoMint šiuo metu įgalintas ir nustatytas</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in kyd.conf.</source>
-        <translation>Norėdami išjungti Automatinį Kalimą pridėkite 'enablezeromint=0' kyd.conf faile.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in svg.conf.</source>
+        <translation>Norėdami išjungti Automatinį Kalimą pridėkite 'enablezeromint=0' svg.conf faile.</translation>
     </message>
     </context>
 <context>
@@ -2156,8 +2156,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Netinkamas mokėjimo adresas %1</translation>
     </message>
     <message>
-        <source>Cannot start kyd: click-to-pay handler</source>
-        <translation>Nepavyksta paleisti kyd: apdorojimo "spustelėjimo ir apmokėjimo" funkcijos klaida</translation>
+        <source>Cannot start svg: click-to-pay handler</source>
+        <translation>Nepavyksta paleisti svg: apdorojimo "spustelėjimo ir apmokėjimo" funkcijos klaida</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2210,8 +2210,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Zerocoin Veiksmai:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the KYD network after a connection is established, but this process has not completed yet.</source>
-        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su KYD tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the SVG network after a connection is established, but this process has not completed yet.</source>
+        <translation>Rodoma informacija gali būti pasenusi. Jūsų piniginė automatiškai sinchronizuojasi su SVG tinklu po ryšio aktyvavimo, tačiau šis procesas dar nebaigtas.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2222,8 +2222,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>0</translation>
     </message>
     <message>
-        <source>zKYD</source>
-        <translation>zKYD</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2234,8 +2234,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinama Konvertavimui:</translation>
     </message>
     <message>
-        <source>0.000 000 00 KYD</source>
-        <translation>0.000 000 00 KYD</translation>
+        <source>0.000 000 00 SVG</source>
+        <translation>0.000 000 00 SVG</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -2266,12 +2266,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>PRIVATUMAS</translation>
     </message>
     <message>
-        <source>zKYD Control</source>
-        <translation>zKyd Kontrolė</translation>
+        <source>zSVG Control</source>
+        <translation>zSvg Kontrolė</translation>
     </message>
     <message>
-        <source>zKYD Selected:</source>
-        <translation>Pasirinkta zKYD:</translation>
+        <source>zSVG Selected:</source>
+        <translation>Pasirinkta zSVG:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2290,8 +2290,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Prieinamas Balansas: </translation>
     </message>
     <message>
-        <source>0 zKYD</source>
-        <translation>0 zKYD</translation>
+        <source>0 zSVG</source>
+        <translation>0 zSVG</translation>
     </message>
     <message>
         <source>Security Level:</source>
@@ -2338,8 +2338,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Zerocoin Statistika:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zKYD</source>
-        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zKYD</translation>
+        <source>Total Balance including unconfirmed and immature zSVG</source>
+        <translation>Bendras balansas, įskaitant nepatvirtintą ir nesubrendusį zSVG</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2516,12 +2516,12 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Kopijuoti sumą</translation>
     </message>
     <message>
-        <source>zKYD Spend #: </source>
-        <translation>zKYD Išleidimas #:</translation>
+        <source>zSVG Spend #: </source>
+        <translation>zSVG Išleidimas #:</translation>
     </message>
     <message>
-        <source>zKYD Mint</source>
-        <translation>zKYD Konvertavimas</translation>
+        <source>zSVG Mint</source>
+        <translation>zSVG Konvertavimas</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2604,8 +2604,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Klaida: jūsų piniginė užrakinta. Pirmiausia įveskite piniginės slaptažodį.</translation>
     </message>
     <message>
-        <source>Invalid KYD Address</source>
-        <translation>Netinkamas KYD Adresas</translation>
+        <source>Invalid SVG Address</source>
+        <translation>Netinkamas SVG Adresas</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2628,8 +2628,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>su Saugumo Lygmeniu</translation>
     </message>
     <message>
-        <source>Failed to spend zKYD</source>
-        <translation>Nepavyko išleisti zKYD</translation>
+        <source>Failed to spend zSVG</source>
+        <translation>Nepavyko išleisti zSVG</translation>
     </message>
     <message>
         <source>serial: </source>
@@ -2651,8 +2651,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a KYD address (e.g. %1)</source>
-        <translation>Įveskite KYD adresą (pvz. %1)</translation>
+        <source>Enter a SVG address (e.g. %1)</source>
+        <translation>Įveskite SVG adresą (pvz. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2829,8 +2829,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Iš:</translation>
     </message>
     <message>
-        <source>Welcome to the KYD RPC console.</source>
-        <translation>Sveiki atvykę į KYD RPC konsolę.</translation>
+        <source>Welcome to the SVG RPC console.</source>
+        <translation>Sveiki atvykę į SVG RPC konsolę.</translation>
     </message>
     <message>
         <source>never</source>
@@ -3001,8 +3001,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Pasirinktinio pakeitimo adresas</translation>
     </message>
     <message>
-        <source>0 KYD</source>
-        <translation>0 KYD</translation>
+        <source>0 SVG</source>
+        <translation>0 SVG</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3158,8 +3158,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The KYD address to sign the message with</source>
-        <translation>KYD adresas, kuriuo pasirašyti žinute</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>SVG adresas, kuriuo pasirašyti žinute</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3182,16 +3182,16 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Kopijuoti dabartinį parašą</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this KYD address</source>
-        <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio KYD adreso savininkas</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Pažymėkite žinutę, kad įrodytumėte, jog jūs šio SVG adreso savininkas</translation>
     </message>
     <message>
-        <source>The KYD address the message was signed with</source>
-        <translation>KYD adresas, kurio buvo pasirašyta žinutė</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>SVG adresas, kurio buvo pasirašyta žinutė</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified KYD address</source>
-        <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu KYD adresu</translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Patikrinkite pranešimą, kad jis būtų pasirašytas su nurodytu SVG adresu</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -3229,8 +3229,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     </context>
 <context>
@@ -3449,18 +3449,18 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     </message>
     </context>
 <context>
-    <name>ZKydControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zKYD</source>
-        <translation>zKYD</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     </context>
 <context>
-    <name>kyd-core</name>
+    <name>svg-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(numatytas: %s)</translation>
@@ -3494,8 +3494,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Klaida kraunant wallet.dat: Piniginė yra sugadinta</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of KYD Core</source>
-        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės KYD Core versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of SVG Core</source>
+        <translation>Klaida kraunant wallet.dat: Piniginė reikalauja naujesnės SVG Core versijos</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3726,8 +3726,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>Piniginė užrakinta.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart KYD Core to complete</source>
-        <translation>Piniginę reikia perrašyti: paleiskite KYD Core iš naujo</translation>
+        <source>Wallet needed to be rewritten: restart SVG Core to complete</source>
+        <translation>Piniginę reikia perrašyti: paleiskite SVG Core iš naujo</translation>
     </message>
     <message>
         <source>Wallet options:</source>

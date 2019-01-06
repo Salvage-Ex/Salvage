@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your KYD addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi KYD per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your SVG addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi SVG per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your KYD addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi KYD per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your SVG addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi SVG per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>KYD will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your KYDs from being stolen by malware infecting your computer.</source>
-        <translation>KYD verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi KYD dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>SVG will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SVGs from being stolen by malware infecting your computer.</source>
+        <translation>SVG verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi SVG dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR KYD&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI KYD&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR SVG&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI SVG&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>Enter a KYD Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserire un indirizzo KYD da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
+        <source>Enter a SVG Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserire un indirizzo SVG da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
     </message>
     <message>
-        <source>The KYD address to encrypt</source>
-        <translation>Indirizzo KYD da crittografare</translation>
+        <source>The SVG address to encrypt</source>
+        <translation>Indirizzo SVG da crittografare</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this KYD address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo KYD</translation>
+        <source>Encrypt the private key for this SVG address</source>
+        <translation>Crittografa la chiave privata per questo indirizzo SVG</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Espora la cronologia delle transazioni</translation>
     </message>
     <message>
-        <source>Privacy Actions for zKYD</source>
-        <translation>Operazioni di privacy per zKYD</translation>
+        <source>Privacy Actions for zSVG</source>
+        <translation>Operazioni di privacy per zSVG</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,16 +645,16 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
-        <source>Send coins to a KYD address</source>
-        <translation>Invia valuta all'indirizzo KYD</translation>
+        <source>Send coins to a SVG address</source>
+        <translation>Invia valuta all'indirizzo SVG</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and kyd: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e kyd: URIs)</translation>
+        <source>Request payments (generates QR codes and svg: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e svg: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,24 +669,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About KYD Core</source>
-        <translation>&amp;Informazioni KYD Core</translation>
+        <source>&amp;About SVG Core</source>
+        <translation>&amp;Informazioni SVG Core</translation>
     </message>
     <message>
-        <source>Show information about KYD Core</source>
-        <translation>Visualizza informazioni su KYD Core</translation>
+        <source>Show information about SVG Core</source>
+        <translation>Visualizza informazioni su SVG Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for KYD</source>
-        <translation>Modifica le opzioni di configurazione per KYD</translation>
+        <source>Modify configuration options for SVG</source>
+        <translation>Modifica le opzioni di configurazione per SVG</translation>
     </message>
     <message>
-        <source>Sign messages with your KYD addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi KYD per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your SVG addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi SVG per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified KYD addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi KYD specifici</translation>
+        <source>Verify messages to ensure they were signed with specified SVG addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi SVG specifici</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a KYD: URI or payment request</source>
-        <translation>Apri un KYD: URI o richiesta di pagamento</translation>
+        <source>Open a SVG: URI or payment request</source>
+        <translation>Apri un SVG: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,16 +729,16 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the KYD Core help message to get a list with possible KYD command-line options</source>
-        <translation>Mostra il messaggio di aiuto KYD Core per ottenere un elenco con le possibili opzioni di riga di comando KYD</translation>
+        <source>Show the SVG Core help message to get a list with possible SVG command-line options</source>
+        <translation>Mostra il messaggio di aiuto SVG Core per ottenere un elenco con le possibili opzioni di riga di comando SVG</translation>
     </message>
     <message>
-        <source>KYD Core client</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core client</source>
+        <translation>SVG Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to KYD network</source>
-        <translation><numerusform>%n connessione attiva alla rete KYDIX</numerusform><numerusform>%n connessioni attive alla rete KYDIX</numerusform></translation>
+        <source>%n active connection(s) to SVG network</source>
+        <translation><numerusform>%n connessione attiva alla rete SVGIX</numerusform><numerusform>%n connessioni attive alla rete SVGIX</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (kyd.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (kyd.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (svg.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (svg.conf)</translation>
     </message>
 </context>
 <context>
@@ -1126,8 +1126,8 @@ MultiSend: %1</translation>
         <translation>Questa etichetta diventa rossa se uno dei destinatari riceve un importo inferiore a %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 ukyd per input.</source>
-        <translation>Può variare di +/- %1 uKYD per input.</translation>
+        <source>Can vary +/- %1 usvg per input.</source>
+        <translation>Può variare di +/- %1 uSVG per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1173,8 +1173,8 @@ MultiSend: %1</translation>
         <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid KYD address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo KYD valido.</translation>
+        <source>The entered address "%1" is not a valid SVG address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo SVG valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1219,16 +1219,16 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About KYD Core</source>
-        <translation>Informazioni su KYD Core</translation>
+        <source>About SVG Core</source>
+        <translation>Informazioni su SVG Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,16 +1274,16 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to KYD Core.</source>
-        <translation>Benvenuto in KYDIX Core.</translation>
+        <source>Welcome to SVG Core.</source>
+        <translation>Benvenuto in SVGIX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where KYD Core will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove KYD Core salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where SVG Core will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove SVG Core salverà i propri dati.</translation>
     </message>
     <message>
-        <source>KYD Core will download and store a copy of the KYD block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>KYD Core scaricherà e salverà una copia della blockchain KYD. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>SVG Core will download and store a copy of the SVG block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>SVG Core scaricherà e salverà una copia della blockchain SVG. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,8 +1294,8 @@ MultiSend: %1</translation>
         <translation>Utilizza una cartella dati personalizzata:</translation>
     </message>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1436,12 +1436,12 @@ MultiSend: %1</translation>
         <translation>Inserire indirizzo destinatario</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other KYD addresses after it matures.
-To Add: enter percentage to give and KYD address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SVG addresses after it matures.
+To Add: enter percentage to give and SVG address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi KYD fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
-Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo KYD da aggiungere al vettore MultiSend.
+        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi SVG fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
+Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo SVG da aggiungere al vettore MultiSend.
 Per Eliminare: Inserisci l'indirizzo da eliminare e premi elimina.
 MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
     </message>
@@ -1671,12 +1671,12 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Configura Offuscamento</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 KYD</source>
-        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 KYD</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 SVG</source>
+        <translation>Usa 2 masternodi diversi per mescolare fino a 10000 SVG</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 KYD</source>
-        <translation>Usa 8 masternodi diversi per mixare fino a 10000 KYD</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 SVG</source>
+        <translation>Usa 8 masternodi diversi per mixare fino a 10000 SVG</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1713,24 +1713,24 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of KYD units to zKYD</source>
-        <translation>Attiva il conio automatico di unità KYD in zKYD</translation>
+        <source>Enable automatic minting of SVG units to zSVG</source>
+        <translation>Attiva il conio automatico di unità SVG in zSVG</translation>
     </message>
     <message>
-        <source>Enable zKYD Automint</source>
-        <translation>Attiva Conio automatico zKYD</translation>
+        <source>Enable zSVG Automint</source>
+        <translation>Attiva Conio automatico zSVG</translation>
     </message>
     <message>
-        <source>Percentage of incoming KYD which get automatically converted to zKYD via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di KYD in entrata che viene automaticamente convertita in zKYD attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming SVG which get automatically converted to zSVG via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di SVG in entrata che viene automaticamente convertita in zSVG attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zKYD</source>
-        <translation>Percentuale di zKYD Percentuale di zKYD da coniare automaticamente</translation>
+        <source>Percentage of autominted zSVG</source>
+        <translation>Percentuale di zSVG Percentuale di zSVG da coniare automaticamente</translation>
     </message>
     <message>
-        <source>Preferred Automint zKYD Denomination</source>
-        <translation>Denominazione preferita conio automatico zKYD</translation>
+        <source>Preferred Automint zSVG Denomination</source>
+        <translation>Denominazione preferita conio automatico zSVG</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1792,8 +1792,8 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>KYD Balance</source>
-        <translation>Bilancio KYD</translation>
+        <source>SVG Balance</source>
+        <translation>Bilancio SVG</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1804,18 +1804,18 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
         <translation>Saldo corrente bloccato in indirizzi sola-lettura.</translation>
     </message>
     <message>
-        <source>Your current KYD balance, unconfirmed and immature transactions included</source>
-        <translation>Il tuo saldo KYD corrente, incluse le transazioni non confermate e non mature</translation>
+        <source>Your current SVG balance, unconfirmed and immature transactions included</source>
+        <translation>Il tuo saldo SVG corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
-        <source>zKYD Balance</source>
-        <translation>Bilancio zKYD</translation>
+        <source>zSVG Balance</source>
+        <translation>Bilancio zSVG</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zKYD are spendable.</source>
+These zSVG are spendable.</source>
         <translation>Maturi: più di 20 conferme e più di 1 conio della stessa denominazione dopo il conio.
-Questi zKYD sono spendibili.</translation>
+Questi zSVG sono spendibili.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1846,8 +1846,8 @@ Questi zKYD sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked KYD or Masternode collaterals. These are excluded from zKYD minting.</source>
-        <translation>KYD bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zKYD.</translation>
+        <source>Locked SVG or Masternode collaterals. These are excluded from zSVG minting.</source>
+        <translation>SVG bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zSVG.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1858,18 +1858,18 @@ Questi zKYD sono spendibili.</translation>
         <translation>Non confermati:</translation>
     </message>
     <message>
-        <source>Your current zKYD balance, unconfirmed and immature zKYD included.</source>
-        <translation>Il tuo saldo zKYD corrente, inclusi zKYD non confermati e non maturi</translation>
+        <source>Your current zSVG balance, unconfirmed and immature zSVG included.</source>
+        <translation>Il tuo saldo zSVG corrente, inclusi zSVG non confermati e non maturi</translation>
     </message>
     <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
     <message>
-        <source>Current percentage of zKYD.
+        <source>Current percentage of zSVG.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Percentuale corrente di zKYD.
+        <translation>Percentuale corrente di zSVG.
 Se il conio automatico è attivato questa percentuale si stabilizzerà all'incirca sulla percentuale stabilita per il conio automatico (percentuale prestabilita = 10%).
 </translation>
     </message>
@@ -1878,14 +1878,14 @@ Se il conio automatico è attivato questa percentuale si stabilizzerà all'incir
         <translation>AutoMint è attivo e impostato su</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in kyd.conf.</source>
-        <translation>Per disabilitare il conio automatico aggiungi 'enablezeromint=0' in kyd.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in svg.conf.</source>
+        <translation>Per disabilitare il conio automatico aggiungi 'enablezeromint=0' in svg.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in kyd.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in svg.conf</source>
         <translation>Conio automatico è correntemente disattivato.
-Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=1' in kyd.conf</translation>
+Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=1' in svg.conf</translation>
     </message>
 </context>
 <context>
@@ -1933,12 +1933,12 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>0</translation>
     </message>
     <message>
-        <source>zKYD</source>
-        <translation>zKYD</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     <message>
-        <source>0.000 000 00 KYD</source>
-        <translation>0.000 000 00 KYD</translation>
+        <source>0.000 000 00 SVG</source>
+        <translation>0.000 000 00 SVG</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1961,16 +1961,16 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>Enter an amount of Kyd to convert to zKYD</source>
-        <translation>Immetti un importo di KYD da convertire in zKYD</translation>
+        <source>Enter an amount of Svg to convert to zSVG</source>
+        <translation>Immetti un importo di SVG da convertire in zSVG</translation>
     </message>
     <message>
-        <source>zKYD Control</source>
-        <translation>Controllo zKYD</translation>
+        <source>zSVG Control</source>
+        <translation>Controllo zSVG</translation>
     </message>
     <message>
-        <source>zKYD Selected:</source>
-        <translation>zKYD selezionati:</translation>
+        <source>zSVG Selected:</source>
+        <translation>zSVG selezionati:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1981,23 +1981,23 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zKYD for spending</source>
-        <translation>zKYD disponibili disponibili per essere spesi (maturi e spendibili)</translation>
+        <source>Available (mature and spendable) zSVG for spending</source>
+        <translation>zSVG disponibili disponibili per essere spesi (maturi e spendibili)</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Bilancio Disponibile:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zKYD for spending
+        <source>Available (mature and spendable) zSVG for spending
 
-zKYD are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zKYD disponibili disponibili per essere spesi (maturi e spendibili)
-Gli zKYD sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
+zSVG are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zSVG disponibili disponibili per essere spesi (maturi e spendibili)
+Gli zSVG sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
     </message>
     <message>
-        <source>0 zKYD</source>
-        <translation>0 zKYD</translation>
+        <source>0 zSVG</source>
+        <translation>0 zSVG</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2040,31 +2040,31 @@ Gli zKYD sono maturi quando hanno più di 20 conferme E più di 2 conii della st
         <translation>Statistiche Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zKYD</source>
-        <translation>Saldo totale inclusi zKYD non confermati e non maturi</translation>
+        <source>Total Balance including unconfirmed and immature zSVG</source>
+        <translation>Saldo totale inclusi zSVG non confermati e non maturi</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
         <translation>Saldo totale Zerocoin:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zKYD minting.
+        <source>Show the current status of automatic zSVG minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to kyd.conf
-- disable: add 'enablezeromint=0' to kyd.conf
+- enable: add 'enablezeromint=1' to svg.conf
+- disable: add 'enablezeromint=0' to svg.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zKYD
+- menu Settings-&gt;Options-&gt;Percentage of autominted zSVG
 
 </source>
-        <translation>Mostra lo stato corrente del conio automatico zKYD.
+        <translation>Mostra lo stato corrente del conio automatico zSVG.
 Per cambiare lo stato (riavvio necessario):
-- attivato: aggiungi 'enablezeromint=1' a kyd.conf
-- disattivato: aggiungi 'enablezeromint=0' a kyd.conf
+- attivato: aggiungi 'enablezeromint=1' a svg.conf
+- disattivato: aggiungi 'enablezeromint=0' a svg.conf
 
 Per cambiare la percentuale (riavvio non necessario):
-- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zKYD da coniare automaticamente
+- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zSVG da coniare automaticamente
 
 </translation>
     </message>
@@ -2209,8 +2209,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Copia ammontare</translation>
     </message>
     <message>
-        <source>zKYD Mint</source>
-        <translation>Conio zKYD</translation>
+        <source>zSVG Mint</source>
+        <translation>Conio zSVG</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2483,8 +2483,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The KYD address to sign the message with</source>
-        <translation>L'indirizzo KYD per firmare il messaggio con</translation>
+        <source>The SVG address to sign the message with</source>
+        <translation>L'indirizzo SVG per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2507,16 +2507,16 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this KYD address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo KYD</translation>
+        <source>Sign the message to prove you own this SVG address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo SVG</translation>
     </message>
     <message>
-        <source>The KYD address the message was signed with</source>
-        <translation>L'indirizzo KYD con cui è stato firmato il messaggio</translation>
+        <source>The SVG address the message was signed with</source>
+        <translation>L'indirizzo SVG con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified KYD address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo KYD specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified SVG address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo SVG specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2554,8 +2554,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>KYD Core</source>
-        <translation>KYD Core</translation>
+        <source>SVG Core</source>
+        <translation>SVG Core</translation>
     </message>
     </context>
 <context>
@@ -2666,18 +2666,18 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     </context>
 <context>
-    <name>ZKydControlDialog</name>
+    <name>ZSvgControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zKYD</source>
-        <translation>zKYD</translation>
+        <source>zSVG</source>
+        <translation>zSVG</translation>
     </message>
     </context>
 <context>
-    <name>kyd-core</name>
+    <name>svg-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

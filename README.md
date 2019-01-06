@@ -4,11 +4,11 @@
 
 #
 
-#### Block times: - *1 minute* 
-#### Maximum supply: - *16,000,000 (16 million) SVG*
-#### Consensus mechanism: - *Proof-of-Stake (85% masternodes, 15% stakers)*
+#### Block times: - *2 minute* 
+#### Maximum supply: - *34,000,000 (34 million) SVG*
+#### Consensus mechanism: - *Proof-of-Stake (70% masternodes, 20% stakers, 10% Treasury)*
 #### Algorithm: - *Quark-hash* 
-#### Masternode collateral - *1,200 SVG*  
+#### Masternode collateral - *5,000 SVG*  
 #### Features: - *SwiftTX, budget, treausury and masternode governance is enabled* 
 #### RPC Port: - *9923* 
 #### P2P Port: - *9922* 
