@@ -109,7 +109,7 @@ public:
         nToCheckBlockUpgradeMajority   = 1000;
         nMinerThreads                  = 0;
         nTargetTimespan                = 2 * 60; 
-        nTargetSpacing                 = 1 * 60;  // Salvage: 1 minute blocks during POW (block 1-200)
+        nTargetSpacing                 = 2 * 60;  // Salvage: 1 minute blocks during POW (block 1-200)
         nMaturity                      = 5; // 6 block maturity (+1 elsewhere)
         nMasternodeCountDrift          = 20;
         nMaxMoneyOut                   = 16000000 * COIN; // 16 million max supply
@@ -118,24 +118,25 @@ public:
         nLastPOWBlock                  = 200;
         nModifierUpdateBlock           = 1; // we use the version 2 for SVG
 
-        const char* pszTimestamp       = "??????????";
+        const char* pszTimestamp       = "Some trash is recycled, some is thrown away, some ends up where it shouldn't end up.";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig         = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue           = 0 * COIN;
-        txNew.vout[0].scriptPubKey     = CScript() << ParseHex("04f5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey     = CScript() << ParseHex("0483e3f08209f63c7634ed8f73edba2faa66abf6123578922c0a5f280f8348e4d16545e800ff3e2337ba90006112759f6c2b128e4c3a7bdd041fd925c12f4c3fa7") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock          = 0;
         genesis.hashMerkleRoot         = genesis.BuildMerkleTree();
         genesis.nVersion               = 1;
-        genesis.nTime                  = 1540453057;
-        genesis.nBits                  = 0x1e0ffff0;
-        genesis.nNonce                 = 23783866;
+        genesis.nTime                  = 1546941042;
+        genesis.nBits                  = 0x1e0fffff;
+        genesis.nNonce                 = 3888318;
+
 
         hashGenesisBlock               = genesis.GetHash();
-        assert(hashGenesisBlock        == uint256("0x000005aac3776a054d1d4c2e2c8e2f251591b9edc586107f5adfb5e693f305d6"));
-        assert(genesis.hashMerkleRoot  == uint256("0xb9e8be7516d514a733a481dc7db4fa04e89b59e0407e99292337cf28d40dcaae"));
+        assert(hashGenesisBlock        == uint256("0x0000030c03248c0c30200db85c140564cf22d70479700020ac35b7f345619ccf"));
+        assert(genesis.hashMerkleRoot  == uint256("827768506cc21bf011726794ec9a605829591df56847317bf7a3e458328ffc00"));
  
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);  // Start with 'S' from https://en.bitcoin.it/wiki/List_of_address_prefixes
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 28);  // Start with 'C' from https://en.bitcoin.it/wiki/List_of_address_prefixes
@@ -158,8 +159,8 @@ public:
 
         nPoolMaxTransactions           = 3;
         strSporkKey                    = "04f9cb975c94dc0037ba350e19f09566239439b5c9ed1729a4dfb257e5d2b75759bb1fa2c72f4a5270c9cb9e4465c213cfeac65a2b83f2484ad297a3991cc7020a";
-        strMasternodePoolDummyAddress  = "NSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
-        nStartMasternodePayments       = 4070908800; 
+        strMasternodePoolDummyAddress  = "SYuYowBAuCLdgSUDEvFp9CGzK2isZXHN7r";
+        nStartMasternodePayments       = 1525192183; 
 
         nBudget_Fee_Confirmations      = 6; // Number of confirmations for the finalization fee
 		
@@ -193,7 +194,7 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // Salvage: 1 day
+        nTargetTimespan = 2 * 60; // Salvage: 1 day
         nTargetSpacing = 2 * 60;  // Salvage: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
@@ -202,8 +203,8 @@ public:
         nMaxMoneyOut = 21000000 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1516926684;
-        genesis.nNonce = 21256609;
+        genesis.nTime = 1535069268;
+        genesis.nNonce = 3271076;
 
         hashGenesisBlock = genesis.GetHash();
        // assert(hashGenesisBlock == uint256("0x000008467c3a9c587533dea06ad9380cded3ed32f9742a6c0c1aebc21bf2bc9b"));
