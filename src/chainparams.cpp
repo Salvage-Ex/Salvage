@@ -99,7 +99,7 @@ public:
         pchMessageStart[1]             = 0xdc;
         pchMessageStart[2]             = 0x21;
         pchMessageStart[3]             = 0xcb;
-        vAlertPubKey                   = ParseHex("0485fbb3ab1dfe9ff723af4b68e870290a5357aec2415b220eb8e22011de442c69d3ef4456ff38500645757272812a760292d95c97ec908e20aa2bbc191f3343f5");
+        vAlertPubKey                   = ParseHex("04307320ddf6bb1f1847ed4814515742bda9bb10415ce492f669a7ea7c4590e520b60febafd3a84b3c5528a303017bde0a88bbc7b78eee117ee6c4ba6f7c9e4a7a");
         nDefaultPort                   = 9922;
         bnProofOfWorkLimit             = ~uint256(0) >> 1;
         nSubsidyHalvingInterval        = 1050000;
@@ -188,7 +188,7 @@ public:
         pchMessageStart[1] = 0x2d;
         pchMessageStart[2] = 0x32;
         pchMessageStart[3] = 0xbc;
-        vAlertPubKey = ParseHex("041b2b4c86273359acac3522471911ed2b303eaab65e8a1de01c06e89f2eab1e55234a4b504f3ce20c6f661f007d0ca15623b4358d9855c7c8ba793a24fa315e22");
+        vAlertPubKey = ParseHex("04abac66ae10ca99a58d2bf464ed97328c69a5c96ddaacae797c595990c86e01d4c9f16d490d047dac06a24c36e1575e6f6ee5e49f3677df12e85ae1ed9c37fa88");
         nDefaultPort = 19922;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -230,7 +230,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "04abb5e65280dda6a113fadfb9877f9c399532245fe1acb61de293ab298034d5084277fab3768774a3b68cbbe5021cc5049ec8c9997a13f64da1afa0bcfb156db1";
+        strSporkKey = "04bb4cc355d8b119f89b3cf9353f2c9e50fbea04276cdd97f4d7a6a9eaeec929e232d4a45431e28a45df5ed5a96162ece24f3b398adfc03544239fd33465d5620f";
         strMasternodePoolDummyAddress = "gbJ4Qad4xc77PpLzMx6rUegAs6aUPWkcUq";
         nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
