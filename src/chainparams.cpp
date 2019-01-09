@@ -139,12 +139,13 @@ public:
         assert(genesis.hashMerkleRoot  == uint256("827768506cc21bf011726794ec9a605829591df56847317bf7a3e458328ffc00"));
  
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);  // Start with 'S' from https://en.bitcoin.it/wiki/List_of_address_prefixes
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 28);  // Start with 'C' from https://en.bitcoin.it/wiki/List_of_address_prefixes
-        base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 46);  // Start with 'K' from https://en.bitcoin.it/wiki/List_of_address_prefixes
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 65);  // Start with 'T' from https://en.bitcoin.it/wiki/List_of_address_prefixes
+        base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 193);  // from https://en.bitcoin.it/wiki/List_of_address_prefixes
         
-		base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();  // BIP32 Start with 'xpub'
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();  // BIP32 Start with 'xprv'
-        base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x02)(0xB0).convert_to_container<std::vector<unsigned char> >();  // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md 688 	0x800002b0
+		base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x3F).convert_to_container<std::vector<unsigned char> >();  // BIP32 Start with 'SVGP'
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x3F).convert_to_container<std::vector<unsigned char> >();  // BIP32 Start with 'SVGS'
+        base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x92)(0xf0).convert_to_container<std::vector<unsigned char> >();  
+        // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md 109 	0x8000006d
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
@@ -213,13 +214,14 @@ public:
         vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125); // Start with 's' from https://en.bitcoin.it/wiki/List_of_address_prefixes
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 87);  // Start with 'c' from https://en.bitcoin.it/wiki/List_of_address_prefixes
-        base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 108); // Start with 'k' from https://en.bitcoin.it/wiki/List_of_address_prefixes
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 127);  // Start with 't' from https://en.bitcoin.it/wiki/List_of_address_prefixes
+        base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 193); 
 
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >(); // Testnet acre BIP44 coin type is '1' (All coin's testnet default)
-
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x41).convert_to_container<std::vector<unsigned char> >(); // Start with 'SVGT'
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x44).convert_to_container<std::vector<unsigned char> >(); // Start with 'SVGU'
+        base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
+        // Testnet Salvage BIP44 coin type is '1' (All coin's testnet default)
+        
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
         fMiningRequiresPeers = true;
