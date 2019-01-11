@@ -1551,28 +1551,33 @@ int64_t GetBlockValue(int nHeight)
 {
     int64_t nSubsidy = 0;
 
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        if (nHeight < Params().LAST_POW_BLOCK() && nHeight > 0)
-            return 50000 * COIN;
+    /* block rewards. */
+    if( nHeight > 1971000 ) {
+        nSubsidy = 10 * COIN;
+    } else if (nHeight >= 394200) {
+        nSubsidy = 20 * COIN;
+    } else if (nHeight >= 262800) {
+        nSubsidy = 15 * COIN;
+    } else if (nHeight >= 131400) {
+        nSubsidy = 10 * COIN;
+    } else if (nHeight > 1) {
+        nSubsidy = 5 * COIN;
+    } else if (nHeight == 1) {
+        nSubsidy = 7095599 * COIN; //pre-mine mostly will got to swaps
+    } else {
+        nSubsidy = 10 * COIN;       
     }
+}
 
-    if (nHeight < Params().LAST_POW_BLOCK())
-        nSubsidy = 13000 * COIN; // 200 blocks x 13,000 SVG = 2,600,000 SVG premine
-    else if (nHeight <= 129600)
-        nSubsidy = 2.5 * COIN;
-    else if (nHeight > 129600 && nHeight <= 259200)
-        nSubsidy = 1.25 * COIN;
-    else
-        nSubsidy = 0.5 * COIN;
-
+    //Enable to cap the coin supply
     // Check if we reached the coin max supply.
-    int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-
+    /*int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
     if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
         nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
 
     if (nMoneySupply >= Params().MaxMoneyOut())
         nSubsidy = 0;
+    */
 
     return nSubsidy;
 }
