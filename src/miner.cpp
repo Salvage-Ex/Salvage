@@ -460,7 +460,7 @@ bool fGenerateBitcoins = false;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("SalvageMiner started\n");
+    LogPrintf("SalvageMiner started (POS=%s)\n", (fProofOfStake ? "true" : "false") );
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("salvage-miner");
 
@@ -485,7 +485,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                 continue;
             }
 
-            if (chainActive.Tip()->nTime < Params().GenesisBlock().nTime || vNodes.empty() || pwallet->IsLocked() || !fMintableCoins || nReserveBalance >= pwallet->GetBalance()) {
+            if (chainActive.Tip()->nTime < Params().GenesisBlock().nTime /*|| vNodes.empty()*/ || pwallet->IsLocked() || !fMintableCoins || nReserveBalance >= pwallet->GetBalance()) {
                 nLastCoinStakeSearchInterval = 0;
                 MilliSleep(30000);
                 continue;
@@ -498,6 +498,11 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                     MilliSleep(30000);
                     continue;
                 }
+            }
+        } else {
+            if (chainActive.Tip()->nHeight >= Params().LAST_POW_BLOCK()) {
+                LogPrintf("POW ended\n");
+                break;
             }
         }
 
