@@ -83,6 +83,7 @@ src/qt/test/moc*.cpp
 Makefile
 salvage-qt
 Salvage-Qt.app
+background.tiff*
 
 # Unit-tests
 Makefile.test
