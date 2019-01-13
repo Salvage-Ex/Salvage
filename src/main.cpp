@@ -1546,6 +1546,24 @@ int64_t GetBlockValue(int nHeight)
 {
     int64_t nSubsidy = 0;
 
+    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+        if( nHeight > 400 ) {
+            nSubsidy = 10 * COIN;
+        } else if (nHeight >= 300) {
+            nSubsidy = 20 * COIN;
+        } else if (nHeight >= 200) {
+            nSubsidy = 15 * COIN;
+        } else if (nHeight >= 100) {
+            nSubsidy = 10 * COIN;
+        } else if (nHeight > 1) {
+            nSubsidy = 5 * COIN;
+        } else if (nHeight == 1) {
+            nSubsidy = 7095599 * COIN; //pre-mine mostly will got to swaps
+        } else {
+            nSubsidy = 10 * COIN;       
+        }
+    }
+
     /* block rewards. */
     if( nHeight > 1971000 ) {
         nSubsidy = 10 * COIN;
