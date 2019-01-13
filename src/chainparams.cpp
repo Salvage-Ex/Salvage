@@ -169,8 +169,6 @@ public:
         nStartMasternodePayments       = 1525192183; 
 
         nBudget_Fee_Confirmations      = 6; // Number of confirmations for the finalization fee
-		
-		nStartNewKeys                  = 1546214400; // New Spork/Alert Key start at 31/12/2018 @ 12:00am (UTC)
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
