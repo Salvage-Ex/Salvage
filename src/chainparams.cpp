@@ -109,8 +109,8 @@ public:
         nMinerThreads                  = 0;
 
         bnProofOfWorkLimit             = ~uint256(0) >> 1;
-        nTargetTimespan                = 4 * 60; 
-        nTargetSpacing                 = 2 * 60;  // Salvage: 2 minute blocks during POW (block 1-200)
+        nTargetTimespan                = 2 * 60; 
+        nTargetSpacing                 = 2 * 60;  // Salvage: 1 minute blocks during POW (block 1-200)
 
         bnProofOfStakeLimit            = ~uint256(0) >> 24;
         nTargetTimespanPOS             = 40 * 60; 
@@ -139,7 +139,6 @@ public:
         genesis.nBits                  = 0x1e0fffff;
         genesis.nNonce                 = 3888318;
 
-
         hashGenesisBlock               = genesis.GetHash();
         assert(hashGenesisBlock        == uint256("0x0000030c03248c0c30200db85c140564cf22d70479700020ac35b7f345619ccf"));
         assert(genesis.hashMerkleRoot  == uint256("827768506cc21bf011726794ec9a605829591df56847317bf7a3e458328ffc00"));
@@ -148,7 +147,7 @@ public:
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 65);  // Start with 'T' from https://en.bitcoin.it/wiki/List_of_address_prefixes
         base58Prefixes[SECRET_KEY]     = std::vector<unsigned char>(1, 193);  // from https://en.bitcoin.it/wiki/List_of_address_prefixes
         
-		base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x3F).convert_to_container<std::vector<unsigned char> >();  // BIP32 Start with 'SVGP'
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x3F).convert_to_container<std::vector<unsigned char> >();  // BIP32 Start with 'SVGP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3F)(0x46)(0x25)(0x3F).convert_to_container<std::vector<unsigned char> >();  // BIP32 Start with 'SVGS'
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x92)(0xf0).convert_to_container<std::vector<unsigned char> >();  
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md 109 	0x8000006d

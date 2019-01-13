@@ -103,7 +103,6 @@ public:
     std::string MasternodePoolDummyAddress() const { return strMasternodePoolDummyAddress; }
     int64_t StartMasternodePayments() const { return nStartMasternodePayments; }
     int64_t Budget_Fee_Confirmations() const { return nBudget_Fee_Confirmations; }
-    int64_t StartNewKeys() const { return nStartNewKeys; }
     CBaseChainParams::Network NetworkID() const { return networkID; }
 
 protected:
@@ -153,8 +152,6 @@ protected:
     std::string strMasternodePoolDummyAddress;
     int64_t nStartMasternodePayments;
     int64_t nBudget_Fee_Confirmations;
-    int64_t nStartNewKeys;
-    
 };
 
 /**
@@ -175,7 +172,6 @@ public:
     virtual void setAllowMinDifficultyBlocks(bool aAllowMinDifficultyBlocks) = 0;
     virtual void setSkipProofOfWorkCheck(bool aSkipProofOfWorkCheck) = 0;
 };
-
 
 /**
  * Return the currently selected parameters. This won't change after app startup
