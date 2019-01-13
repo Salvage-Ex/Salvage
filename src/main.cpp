@@ -1562,6 +1562,8 @@ int64_t GetBlockValue(int nHeight)
         } else {
             nSubsidy = 10 * COIN;       
         }
+
+        return nSubsidy;
     }
 
     /* block rewards. */
