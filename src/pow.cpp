@@ -62,7 +62,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
         if (LastBlockTime > 0) {
             int64_t Diff = (LastBlockTime - BlockReading->GetBlockTime());
-            nActualTimespan += (Diff < 0 ? nTargetSpacing : diff);
+            nActualTimespan += (Diff < 0 ? nTargetSpacing : Diff);
         }
         LastBlockTime = BlockReading->GetBlockTime();
 
