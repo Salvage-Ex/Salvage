@@ -104,6 +104,7 @@ public:
     int64_t StartMasternodePayments() const { return nStartMasternodePayments; }
     int64_t Budget_Fee_Confirmations() const { return nBudget_Fee_Confirmations; }
     CBaseChainParams::Network NetworkID() const { return networkID; }
+    std::string TreasuryAddress() const { return strTreasuryAddress; }
 
 protected:
     CChainParams() {}
@@ -152,6 +153,7 @@ protected:
     std::string strMasternodePoolDummyAddress;
     int64_t nStartMasternodePayments;
     int64_t nBudget_Fee_Confirmations;
+    std::string strTreasuryAddress;
 };
 
 /**

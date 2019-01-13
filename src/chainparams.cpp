@@ -169,6 +169,8 @@ public:
         nStartMasternodePayments       = 1525192183; 
 
         nBudget_Fee_Confirmations      = 6; // Number of confirmations for the finalization fee
+
+        strTreasuryAddress             = "SeRhGrDny4xXFGt9dPwBHSYARNpb2dzCdh";
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -240,6 +242,8 @@ public:
         nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
+
+        strTreasuryAddress             = "sc3NySryJN1XpJ1MbNf3knBLXEKMbnqNyz";
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
     {
