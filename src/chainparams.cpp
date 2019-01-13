@@ -101,15 +101,21 @@ public:
         pchMessageStart[3]             = 0xcb;
         vAlertPubKey                   = ParseHex("04307320ddf6bb1f1847ed4814515742bda9bb10415ce492f669a7ea7c4590e520b60febafd3a84b3c5528a303017bde0a88bbc7b78eee117ee6c4ba6f7c9e4a7a");
         nDefaultPort                   = 9922;
-        bnProofOfWorkLimit             = ~uint256(0) >> 1;
         nSubsidyHalvingInterval        = 1050000;
         nMaxReorganizationDepth        = 100;
         nEnforceBlockUpgradeMajority   = 750;
         nRejectBlockOutdatedMajority   = 950;
         nToCheckBlockUpgradeMajority   = 1000;
         nMinerThreads                  = 0;
-        nTargetTimespan                = 2 * 60; 
-        nTargetSpacing                 = 2 * 60;  // Salvage: 1 minute blocks during POW (block 1-200)
+
+        bnProofOfWorkLimit             = ~uint256(0) >> 1;
+        nTargetTimespan                = 4 * 60; 
+        nTargetSpacing                 = 2 * 60;  // Salvage: 2 minute blocks during POW (block 1-200)
+
+        bnProofOfStakeLimit            = ~uint256(0) >> 24;
+        nTargetTimespanPOS             = 40 * 60; 
+        nTargetSpacingPOS              = 2 * 60;  // Salvage: 2 minute blocks during POS
+
         nMaturity                      = 5; // 6 block maturity (+1 elsewhere)
         nMasternodeCountDrift          = 20;
         nMaxMoneyOut                   = 16000000 * COIN; // 16 million max supply

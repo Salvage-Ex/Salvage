@@ -49,7 +49,6 @@ public:
     const MessageStartChars& MessageStart() const { return pchMessageStart; }
     const std::vector<unsigned char>& AlertKey() const { return vAlertPubKey; }
     int GetDefaultPort() const { return nDefaultPort; }
-    const uint256& ProofOfWorkLimit() const { return bnProofOfWorkLimit; }
     int SubsidyHalvingInterval() const { return nSubsidyHalvingInterval; }
     /** Used to check majorities for block version upgrade */
     int EnforceBlockUpgradeMajority() const { return nEnforceBlockUpgradeMajority; }
@@ -72,9 +71,17 @@ public:
     bool SkipProofOfWorkCheck() const { return fSkipProofOfWorkCheck; }
     /** Make standard checks */
     bool RequireStandard() const { return fRequireStandard; }
+
+    const uint256& ProofOfWorkLimit() const { return bnProofOfWorkLimit; }
     int64_t TargetTimespan() const { return nTargetTimespan; }
     int64_t TargetSpacing() const { return nTargetSpacing; }
     int64_t Interval() const { return nTargetTimespan / nTargetSpacing; }
+
+    const uint256& ProofOfStakeLimit() const { return bnProofOfStakeLimit; }
+    int64_t TargetTimespanPOS() const { return nTargetTimespanPOS; }
+    int64_t TargetSpacingPOS() const { return nTargetSpacingPOS; }
+    int64_t IntervalPOS() const { return nTargetTimespanPOS / nTargetSpacingPOS; }
+
     int LAST_POW_BLOCK() const { return nLastPOWBlock; }
     int COINBASE_MATURITY() const { return nMaturity; }
     int ModifierUpgradeBlock() const { return nModifierUpdateBlock; }
@@ -107,14 +114,20 @@ protected:
     //! Raw pub key bytes for the broadcast alert signing key.
     std::vector<unsigned char> vAlertPubKey;
     int nDefaultPort;
-    uint256 bnProofOfWorkLimit;
     int nMaxReorganizationDepth;
     int nSubsidyHalvingInterval;
     int nEnforceBlockUpgradeMajority;
     int nRejectBlockOutdatedMajority;
     int nToCheckBlockUpgradeMajority;
+
+    uint256 bnProofOfWorkLimit;
     int64_t nTargetTimespan;
     int64_t nTargetSpacing;
+
+    uint256 bnProofOfStakeLimit;
+    int64_t nTargetTimespanPOS;
+    int64_t nTargetSpacingPOS;
+
     int nLastPOWBlock;
     int nMasternodeCountDrift;
     int nMaturity;
