@@ -1583,7 +1583,8 @@ int64_t GetBlockValue(int nHeight)
 
     //Enable to cap the coin supply
     // Check if we reached the coin max supply.
-    /*int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
+    /*
+    int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
     if (nMoneySupply + nSubsidy >= Params().MaxMoneyOut())
         nSubsidy = Params().MaxMoneyOut() - nMoneySupply;
 
@@ -1596,16 +1597,20 @@ int64_t GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
-    int64_t ret = 0;
-
     // No rewards till masternode activation.
     if (nHeight < Params().LAST_POW_BLOCK() || blockValue == 0)
         return 0;
 
-    // Check if we reached coin supply
-    ret = blockValue * 0.70; // 70% of block reward
+    return blockValue * 0.70; // 70% of block reward
+}
 
-    return ret;
+int64_t GetTreasuryPayment(int nHeight, int64_t blockValue)
+{
+    // No rewards till masternode activation.
+    if (nHeight < Params().LAST_POW_BLOCK() || blockValue == 0)
+        return 0;
+
+    return blockValue * 0.10; // 10% of block reward
 }
 
 bool IsMasternodeCollateral(CAmount value)
