@@ -593,7 +593,6 @@ void EraseOrphansFor(NodeId peer)
     if (nErased > 0) LogPrint("mempool", "Erased %d orphan tx from peer %d\n", nErased, peer);
 }
 
-
 unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 {
     unsigned int nEvicted = 0;
@@ -1024,7 +1023,6 @@ CAmount GetMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowF
     return nMinFee;
 }
 
-
 bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransaction& tx, bool fLimitFree, bool* pfMissingInputs, bool fRejectInsaneFee, bool ignoreFees)
 {
     AssertLockHeld(cs_main);
@@ -1263,7 +1261,6 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
         }
     }
 
-
     {
         CCoinsView dummy;
         CCoinsViewCache view(&dummy);
@@ -1464,7 +1461,6 @@ bool GetTransaction(const uint256& hash, CTransaction& txOut, uint256& hashBlock
     return false;
 }
 
-
 //////////////////////////////////////////////////////////////////////////////
 //
 // CBlock and CBlockIndex
@@ -1527,7 +1523,6 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex)
     return true;
 }
 
-
 double ConvertBitsToDouble(unsigned int nBits)
 {
     int nShift = (nBits >> 24) & 0xff;
@@ -1567,7 +1562,6 @@ int64_t GetBlockValue(int nHeight)
     } else {
         nSubsidy = 10 * COIN;       
     }
-
 
     //Enable to cap the coin supply
     // Check if we reached the coin max supply.
@@ -2460,7 +2454,6 @@ bool DisconnectBlockAndInputs(CValidationState& state, CTransaction txLock)
     list<CTransaction> txConflicted;
     mempool.removeConflicts(txLock, txConflicted);
 
-
     // List of what to disconnect (typically nothing)
     vector<CBlockIndex*> vDisconnect;
 
@@ -2507,7 +2500,6 @@ bool DisconnectBlockAndInputs(CValidationState& state, CTransaction txLock)
 
     return true;
 }
-
 
 /**
  * Return the tip of the chain with the most work in it, that isn't
@@ -3513,7 +3505,6 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     return true;
 }
 
-
 bool AbortNode(const std::string& strMessage, const std::string& userMessage)
 {
     strMiscWarning = strMessage;
@@ -3874,7 +3865,6 @@ bool LoadBlockIndex(string& strError)
     return true;
 }
 
-
 bool InitBlockIndex()
 {
     LOCK(cs_main);
@@ -3913,7 +3903,6 @@ bool InitBlockIndex()
 
     return true;
 }
-
 
 bool LoadExternalBlockFile(FILE* fileIn, CDiskBlockPos* dbp)
 {
@@ -4209,12 +4198,10 @@ string GetWarnings(string strFor)
     return "error";
 }
 
-
 //////////////////////////////////////////////////////////////////////////////
 //
 // Messages
 //
-
 
 bool static AlreadyHave(const CInv& inv)
 {
@@ -4276,7 +4263,6 @@ bool static AlreadyHave(const CInv& inv)
     // Don't know what it is, just say we already got one
     return true;
 }
-
 
 void static ProcessGetData(CNode* pfrom)
 {
@@ -4627,14 +4613,12 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         AddTimeData(pfrom->addr, nTime);
     }
 
-
     else if (pfrom->nVersion == 0) {
         // Must have a version message before anything else
         LOCK(cs_main);
         Misbehaving(pfrom->GetId(), 1);
         return false;
     }
-
 
     else if (strCommand == "verack") {
         pfrom->SetRecvVersion(min(pfrom->nVersion, PROTOCOL_VERSION));
@@ -4645,7 +4629,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             State(pfrom->GetId())->fCurrentlyConnected = true;
         }
     }
-
 
     else if (strCommand == "addr") {
         vector<CAddress> vAddr;
@@ -4709,7 +4692,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->fDisconnect = true;
     }
 
-
     else if (strCommand == "inv") {
         vector<CInv> vInv;
         vRecv >> vInv;
@@ -4735,7 +4717,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             if (!fAlreadyHave && !fImporting && !fReindex && inv.type != MSG_BLOCK)
                 pfrom->AskFor(inv);
 
-
             if (inv.type == MSG_BLOCK) {
                 UpdateBlockAvailability(pfrom->GetId(), inv.hash);
                 if (!fAlreadyHave && !fImporting && !fReindex && !mapBlocksInFlight.count(inv.hash)) {
@@ -4758,7 +4739,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->PushMessage("getdata", vToFetch);
     }
 
-
     else if (strCommand == "getdata") {
         vector<CInv> vInv;
         vRecv >> vInv;
@@ -4777,7 +4757,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         pfrom->vRecvGetData.insert(pfrom->vRecvGetData.end(), vInv.begin(), vInv.end());
         ProcessGetData(pfrom);
     }
-
 
     else if (strCommand == "getblocks" || strCommand == "getheaders") {
         CBlockLocator locator;
@@ -4809,7 +4788,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             }
         }
     }
-
 
     else if (strCommand == "headers" && Params().HeadersFirstSyncingActive()) {
         CBlockLocator locator;
@@ -4847,7 +4825,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         }
         pfrom->PushMessage("headers", vHeaders);
     }
-
 
     else if (strCommand == "tx") {
         vector<uint256> vWorkQueue;
@@ -4898,7 +4875,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     // resolution (that is, feeding people an invalid transaction based on LegitTxX in order to get
                     // anyone relaying LegitTxX banned)
                     CValidationState stateDummy;
-
 
                     if(setMisbehaving.count(fromPeer))
                         continue;
@@ -4952,7 +4928,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                 Misbehaving(pfrom->GetId(), nDoS);
         }
     }
-
 
     else if (strCommand == "headers" && Params().HeadersFirstSyncingActive() && !fImporting && !fReindex) // Ignore headers received while importing
     {
@@ -5055,7 +5030,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         }
     }
 
-
     // This asymmetric behavior for inbound and outbound connections was introduced
     // to prevent a fingerprinting attack: an attacker can send specific fake addresses
     // to users' AddrMan and later request them by sending getaddr messages.
@@ -5067,7 +5041,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         BOOST_FOREACH (const CAddress& addr, vAddr)
             pfrom->PushAddress(addr);
     }
-
 
     else if (strCommand == "mempool") {
         LOCK2(cs_main, pfrom->cs_filter);
@@ -5092,7 +5065,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->PushMessage("inv", vInv);
     }
 
-
     else if (strCommand == "ping") {
         if (pfrom->nVersion > BIP0031_VERSION) {
             uint64_t nonce = 0;
@@ -5111,7 +5083,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->PushMessage("pong", nonce);
         }
     }
-
 
     else if (strCommand == "pong") {
         int64_t pingUsecEnd = nTimeReceived;
@@ -5168,7 +5139,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         }
     }
 
-
     else if (fAlerts && strCommand == "alert") {
         CAlert alert;
         vRecv >> alert;
@@ -5222,7 +5192,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         pfrom->fRelayTxes = true;
     }
 
-
     else if (strCommand == "filteradd") {
         vector<unsigned char> vData;
         vRecv >> vData;
@@ -5243,7 +5212,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         }
     }
 
-
     else if (strCommand == "filterclear") {
         LOCK(pfrom->cs_filter);
         delete pfrom->pfilter;
@@ -5251,14 +5219,13 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         pfrom->fRelayTxes = true;
     }
 
-
     else if (strCommand == "reject") {
         string strMsg;
         unsigned char ccode;
         string strReason;
-		
-		try {
-			vRecv >> LIMITED_STRING(strMsg, CMessageHeader::COMMAND_SIZE) >> ccode >> LIMITED_STRING(strReason, MAX_REJECT_MESSAGE_LENGTH);
+        
+        try {
+            vRecv >> LIMITED_STRING(strMsg, CMessageHeader::COMMAND_SIZE) >> ccode >> LIMITED_STRING(strReason, MAX_REJECT_MESSAGE_LENGTH);
 
             if (fDebug) {
                 ostringstream ss;
@@ -5271,11 +5238,11 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                 }
                 LogPrint("net", "Reject %s\n", SanitizeString(ss.str()));
             } 
-		} catch (std::ios_base::failure& e) {
-			// Avoid feedback loops by preventing reject messages from triggering a new reject message.
-			LogPrint("net", "Unparseable reject message received\n");
-		}
-		
+        } catch (std::ios_base::failure& e) {
+            // Avoid feedback loops by preventing reject messages from triggering a new reject message.
+            LogPrint("net", "Unparseable reject message received\n");
+        }
+        
         // If I receive a REJECT_OBSOLETE reason I check the current Protocol Version
         if( ccode == REJECT_OBSOLETE )
         {
@@ -5298,7 +5265,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         masternodeSync.ProcessMessage(pfrom, strCommand, vRecv);
     }
 
-
     return true;
 }
 
@@ -5309,20 +5275,20 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
     if (IsSporkActive(SPORK_19_PROTOCOL_ENFORCEMENT_5))
-		return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_5;
-	
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_5;
+    
     if (IsSporkActive(SPORK_18_PROTOCOL_ENFORCEMENT_4))
-		return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_5;
-	
+        return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_5;
+    
     if (IsSporkActive(SPORK_17_PROTOCOL_ENFORCEMENT_3))
-		return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_4;
-	
+        return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_4;
+    
     if (IsSporkActive(SPORK_16_PROTOCOL_ENFORCEMENT_2))
-		return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_3;
-	
+        return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_3;
+    
     if (IsSporkActive(SPORK_15_PROTOCOL_ENFORCEMENT_1))
-		return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_2;
-	
+        return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_2;
+    
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT_1;
 }
 
@@ -5434,7 +5400,6 @@ bool ProcessMessages(CNode* pfrom)
 
     return fOk;
 }
-
 
 bool SendMessages(CNode* pto, bool fSendTrickle)
 {
@@ -5662,7 +5627,6 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
     return true;
 }
 
-
 bool CBlockUndo::WriteToDisk(CDiskBlockPos& pos, const uint256& hashBlock)
 {
     // Open history file to append
@@ -5720,7 +5684,6 @@ std::string CBlockFileInfo::ToString() const
 {
     return strprintf("CBlockFileInfo(blocks=%u, size=%u, heights=%u...%u, time=%s...%s)", nBlocks, nSize, nHeightFirst, nHeightLast, DateTimeStrFormat("%Y-%m-%d", nTimeFirst), DateTimeStrFormat("%Y-%m-%d", nTimeLast));
 }
-
 
 class CMainCleanup
 {
