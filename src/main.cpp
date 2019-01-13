@@ -1567,7 +1567,7 @@ int64_t GetBlockValue(int nHeight)
     } else {
         nSubsidy = 10 * COIN;       
     }
-}
+
 
     //Enable to cap the coin supply
     // Check if we reached the coin max supply.
@@ -1591,7 +1591,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         return 0;
 
     // Check if we reached coin supply
-    ret = blockValue * 0.85; // 85% of block reward
+    ret = blockValue * 0.70; // 70% of block reward
 
     return ret;
 }
