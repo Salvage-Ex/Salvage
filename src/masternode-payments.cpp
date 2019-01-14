@@ -550,6 +550,33 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 
     CAmount nReward = GetBlockValue(nBlockHeight);
 
+    {
+        CBitcoinAddress addressTreasury;
+        if (!addressTreasury.SetString(Params().TreasuryAddress())) {
+            LogPrintf("CMasternodePayments::IsTransactionValid - Invalid Treasury address\n");
+            return false;
+        }
+
+        CScript payeeTreasury = GetScriptForDestination(addressTreasury.Get());
+
+        CAmount requiredTreasuryPayment = GetTreasuryPayment(nBlockHeight, nReward);
+
+        bool found = false;
+        BOOST_FOREACH (CTxOut out, txNew.vout) {
+            if (payeeTreasury == out.scriptPubKey) {
+                if (out.nValue >= requiredTreasuryPayment) {
+                    found = true;
+                    break;
+                }
+            }
+        }
+
+        if (!found) {
+            LogPrintf("CMasternodePayments::IsTransactionValid - Treasury payment not found\n");
+            return false;
+        }
+    }
+
     if (IsSporkActive(SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT)) {
         // Get a stable number of masternodes by ignoring newly activated (< 8000 sec old) masternodes
         nMasternode_Drift_Count = mnodeman.stable_size() + Params().MasternodeCountDrift();
