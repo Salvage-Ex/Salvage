@@ -665,6 +665,9 @@ bool CMasternodePayments::IsTransactionValid(const CTransaction& txNew, int nBlo
 {
     LOCK(cs_mapMasternodeBlocks);
 
+    if (nBlockHeight < Params().LAST_POW_BLOCK())
+        return true;
+
     if (mapMasternodeBlocks.count(nBlockHeight)) {
         return mapMasternodeBlocks[nBlockHeight].IsTransactionValid(txNew);
     }
