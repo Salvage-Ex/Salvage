@@ -108,13 +108,13 @@ public:
         nToCheckBlockUpgradeMajority   = 1000;
         nMinerThreads                  = 0;
 
-        bnProofOfWorkLimit             = ~uint256(0) >> 1;
-        nTargetTimespan                = 2 * 60; 
-        nTargetSpacing                 = 2 * 60;  // Salvage: 1 minute blocks during POW (block 1-200)
+        bnProofOfWorkLimit             = ~uint256(0) >> 20;
+        nTargetTimespan                =  2 * 60; 
+        nTargetSpacing                 =  2 * 60;  // Salvage: 1 minute blocks during POW (block 1-200)
 
-        bnProofOfStakeLimit            = ~uint256(0) >> 24;
+        bnProofOfStakeLimit            = ~uint256(0) >> 20;
         nTargetTimespanPOS             = 40 * 60; 
-        nTargetSpacingPOS              = 2 * 60;  // Salvage: 2 minute blocks during POS
+        nTargetSpacingPOS              =  2 * 60;  // Salvage: 2 minute blocks during POS
 
         nMaturity                      = 5; // 6 block maturity (+1 elsewhere)
         nMasternodeCountDrift          = 20;
@@ -188,32 +188,39 @@ class CTestNetParams : public CMainParams
 public:
     CTestNetParams()
     {
-        networkID = CBaseChainParams::TESTNET;
-        strNetworkID = "test";
-        pchMessageStart[0] = 0x4a;
-        pchMessageStart[1] = 0x2d;
-        pchMessageStart[2] = 0x32;
-        pchMessageStart[3] = 0xbc;
-        vAlertPubKey = ParseHex("04abac66ae10ca99a58d2bf464ed97328c69a5c96ddaacae797c595990c86e01d4c9f16d490d047dac06a24c36e1575e6f6ee5e49f3677df12e85ae1ed9c37fa88");
-        nDefaultPort = 19922;
-        nEnforceBlockUpgradeMajority = 51;
-        nRejectBlockOutdatedMajority = 75;
-        nToCheckBlockUpgradeMajority = 100;
-        nMinerThreads = 0;
-        nTargetTimespan = 2 * 60; // Salvage: 1 day
-        nTargetSpacing = 2 * 60;  // Salvage: 1 minute
-        nLastPOWBlock = 200;
-        nMaturity = 15;
-        nMasternodeCountDrift = 4;
-        nModifierUpdateBlock = 1;
-        nMaxMoneyOut = 21000000 * COIN;
+        networkID                      = CBaseChainParams::TESTNET;
+        strNetworkID                   = "test";
+        pchMessageStart[0]             = 0x4a;
+        pchMessageStart[1]             = 0x2d;
+        pchMessageStart[2]             = 0x32;
+        pchMessageStart[3]             = 0xbc;
+        vAlertPubKey                   = ParseHex("04abac66ae10ca99a58d2bf464ed97328c69a5c96ddaacae797c595990c86e01d4c9f16d490d047dac06a24c36e1575e6f6ee5e49f3677df12e85ae1ed9c37fa88");
+        nDefaultPort                   = 19922;
+        nEnforceBlockUpgradeMajority   = 51;
+        nRejectBlockOutdatedMajority   = 75;
+        nToCheckBlockUpgradeMajority   = 100;
+        nMinerThreads                  = 0;
+
+        bnProofOfWorkLimit             = ~uint256(0) >> 20;
+        nTargetTimespan                =  1 * 60; 
+        nTargetSpacing                 =  1 * 60;  // Salvage: 1 minute blocks during POW (block 1-200) on testnet
+
+        bnProofOfStakeLimit            = ~uint256(0) >> 20;
+        nTargetTimespanPOS             =  40 * 60; 
+        nTargetSpacingPOS              =   2 * 60;  // Salvage: 1 minute blocks during POS on testnet
+
+        nLastPOWBlock                  = 200;
+        nMaturity                      = 15;
+        nMasternodeCountDrift          = 4;
+        nModifierUpdateBlock           = 1;
+        nMaxMoneyOut                   = 21000000 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1535069268;
-        genesis.nNonce = 3271076;
+        genesis.nTime                  = 1535069268;
+        genesis.nNonce                 = 3271076;
 
-        hashGenesisBlock = genesis.GetHash();
-       // assert(hashGenesisBlock == uint256("0x000008467c3a9c587533dea06ad9380cded3ed32f9742a6c0c1aebc21bf2bc9b"));
+        hashGenesisBlock               = genesis.GetHash();
+       // assert(hashGenesisBlock      == uint256("0x000008467c3a9c587533dea06ad9380cded3ed32f9742a6c0c1aebc21bf2bc9b"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -229,18 +236,18 @@ public:
         
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
-        fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = false;
-        fDefaultConsistencyChecks = false;
-        fRequireStandard = false;
-        fMineBlocksOnDemand = false;
+        fMiningRequiresPeers           = true;
+        fAllowMinDifficultyBlocks      = false;
+        fDefaultConsistencyChecks      = false;
+        fRequireStandard               = false;
+        fMineBlocksOnDemand            = false;
         fTestnetToBeDeprecatedFieldRPC = true;
 
-        nPoolMaxTransactions = 2;
-        strSporkKey = "04bb4cc355d8b119f89b3cf9353f2c9e50fbea04276cdd97f4d7a6a9eaeec929e232d4a45431e28a45df5ed5a96162ece24f3b398adfc03544239fd33465d5620f";
-        strMasternodePoolDummyAddress = "gbJ4Qad4xc77PpLzMx6rUegAs6aUPWkcUq";
-        nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis
-        nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
+        nPoolMaxTransactions           = 2;
+        strSporkKey                    = "04bb4cc355d8b119f89b3cf9353f2c9e50fbea04276cdd97f4d7a6a9eaeec929e232d4a45431e28a45df5ed5a96162ece24f3b398adfc03544239fd33465d5620f";
+        strMasternodePoolDummyAddress  = "gbJ4Qad4xc77PpLzMx6rUegAs6aUPWkcUq";
+        nStartMasternodePayments       = genesis.nTime + 86400; // 24 hours after genesis
+        nBudget_Fee_Confirmations      = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
 
         strTreasuryAddress             = "sc3NySryJN1XpJ1MbNf3knBLXEKMbnqNyz";

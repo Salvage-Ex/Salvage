@@ -39,11 +39,32 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         bnTargetLimit   = Params().ProofOfStakeLimit();
         nTargetSpacing  = Params().TargetSpacingPOS();
         nTargetTimespan = Params().TargetTimespanPOS();
-    } else {
-        bnTargetLimit   = Params().ProofOfWorkLimit();
-        nTargetSpacing  = Params().TargetSpacing();
-        nTargetTimespan = Params().TargetTimespan();
+
+        int64_t nActualSpacing = 0;
+        if (pindexLast->nHeight != 0)
+            nActualSpacing = pindexLast->GetBlockTime() - pindexLast->pprev->GetBlockTime();
+
+        if (nActualSpacing < 0)
+            nActualSpacing = 1;
+
+        // target change every block
+        // retarget with exponential moving toward target spacing
+        uint256 bnNew;
+        bnNew.SetCompact(pindexLast->nBits);
+
+        int64_t nInterval = nTargetTimespan / nTargetSpacing;
+        bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
+        bnNew /= ((nInterval + 1) * nTargetSpacing);
+        
+        if (bnNew <= 0 || bnNew > bnTargetLimit)
+            bnNew = bnTargetLimit;
+
+        return bnNew.GetCompact();
     }
+
+    bnTargetLimit   = Params().ProofOfWorkLimit();
+    nTargetSpacing  = Params().TargetSpacing();
+    nTargetTimespan = Params().TargetTimespan();
 
     for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
         if (PastBlocksMax > 0 && i > PastBlocksMax) {
@@ -61,8 +82,8 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         }
 
         if (LastBlockTime > 0) {
-            int64_t Diff = (LastBlockTime - BlockReading->GetBlockTime());
-            nActualTimespan += (Diff < 0 ? nTargetSpacing : Diff);
+            int64_t diff = (LastBlockTime - BlockReading->GetBlockTime());
+            nActualTimespan += diff;
         }
         LastBlockTime = BlockReading->GetBlockTime();
 

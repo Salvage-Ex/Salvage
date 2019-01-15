@@ -1547,41 +1547,26 @@ int64_t GetBlockValue(int nHeight)
     int64_t nSubsidy = 0;
 
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        if( nHeight > 400 ) {
-            nSubsidy = 10 * COIN;
-        } else if (nHeight >= 300) {
-            nSubsidy = 20 * COIN;
-        } else if (nHeight >= 200) {
-            nSubsidy = 15 * COIN;
-        } else if (nHeight >= 100) {
-            nSubsidy = 10 * COIN;
-        } else if (nHeight > 1) {
-            nSubsidy = 5 * COIN;
-        } else if (nHeight == 1) {
-            nSubsidy = 7095599 * COIN; //pre-mine mostly will got to swaps
-        } else {
-            nSubsidy = 10 * COIN;       
-        }
+             if (nHeight >= 400) {nSubsidy = 10 * COIN;}
+        else if (nHeight >= 300) {nSubsidy = 20 * COIN;}
+        else if (nHeight >= 200) {nSubsidy = 15 * COIN;}
+        else if (nHeight >= 100) {nSubsidy = 10 * COIN;}
+        else if (nHeight >=   1) {nSubsidy =  5 * COIN;}
+        else if (nHeight ==   0) {nSubsidy = 7095599 * COIN; }
+        else { nSubsidy = 10 * COIN; }
 
         return nSubsidy;
     }
 
     /* block rewards. */
-    if( nHeight > 1971000 ) {
-        nSubsidy = 10 * COIN;
-    } else if (nHeight >= 394200) {
-        nSubsidy = 20 * COIN;
-    } else if (nHeight >= 262800) {
-        nSubsidy = 15 * COIN;
-    } else if (nHeight >= 131400) {
-        nSubsidy = 10 * COIN;
-    } else if (nHeight > 1) {
-        nSubsidy = 5 * COIN;
-    } else if (nHeight == 1) {
-        nSubsidy = 7095599 * COIN; //pre-mine mostly will got to swaps
-    } else {
-        nSubsidy = 10 * COIN;       
-    }
+
+         if (nHeight >= 1971000) {nSubsidy = 10 * COIN;}
+    else if (nHeight >=  394200) {nSubsidy = 20 * COIN;}
+    else if (nHeight >=  262800) {nSubsidy = 15 * COIN;}
+    else if (nHeight >=  131400) {nSubsidy = 10 * COIN;}
+    else if (nHeight >=       1) {nSubsidy =  5 * COIN;}
+    else if (nHeight ==       0) {nSubsidy = 7095599 * COIN; }//pre-mine mostly will got to swaps
+    else { nSubsidy = 10 * COIN; }
 
     //Enable to cap the coin supply
     // Check if we reached the coin max supply.
@@ -2151,7 +2136,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight + 1);
+    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 

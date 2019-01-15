@@ -300,19 +300,20 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         }
     }
 
-    CAmount blockValue = GetBlockValue(pindexPrev->nHeight + 1);
+    CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue);
     CAmount treasuryPayment = GetTreasuryPayment(pindexPrev->nHeight, blockValue);
 
-    CBitcoinAddress addressTreasury;
-    if (!addressTreasury.SetString(Params().TreasuryAddress())) {
-        LogPrintf("CMasternodePayments::FillBlockPayee - Invalid Treasury address\n");
-        treasuryPayment = 0;
-    }
+    if (hasPayment && masternodePayment > 0) {
 
-    CScript payeeTreasury = GetScriptForDestination(addressTreasury.Get());
+        CBitcoinAddress addressTreasury;
+        if (!addressTreasury.SetString(Params().TreasuryAddress())) {
+            LogPrintf("CMasternodePayments::FillBlockPayee - Invalid Treasury address\n");
+            treasuryPayment = 0;
+        }
 
-    if (hasPayment) {
+        CScript payeeTreasury = GetScriptForDestination(addressTreasury.Get());
+
         if (fProofOfStake) {
             /**For Proof Of Stake vout[0] must be null
              * Stake reward can be split into many different outputs, so we must
