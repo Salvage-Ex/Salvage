@@ -343,7 +343,7 @@ void OverviewPage::SetLinks()
     ui->labelLinks5->setText("");
     ui->labelLinks7->setText("");
 
-    ui->labelLinksUrl1->setText("<a href=\"https://www.salvageproject.org\">https://www.salvageproject.org</a>");
+    ui->labelLinksUrl1->setText("<a href=\"https://salvageproject.org\">https://salvageproject.org</a>");
     ui->labelLinksUrl2->setText("<a href=\"https://salvageproject.org/whitepaper\">https://salvageproject.org/whitepaper</a>");
     ui->labelLinksUrl3->setText("<a href=\"http://explorer.salvageproject.org:3001\">http://explorer.salvageproject.org:3001</a>");
     ui->labelLinksUrl4->setText("<a href=\"https://discord.gg/KAbBer2\">https://discord.gg/KAbBer2</a>");
