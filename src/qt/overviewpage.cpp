@@ -339,15 +339,15 @@ void OverviewPage::SetLinks()
     ui->labelLinks2->setText("Whitepaper:");
     ui->labelLinks3->setText("Block Explorer:");
     ui->labelLinks4->setText("Discord:");
-    ui->labelLinks5->setText("Twitter:");
     ui->labelLinks6->setText("Github:");
-    ui->labelLinks7->setText("SVG Merchants");
+    ui->labelLinks5->setText("");
+    ui->labelLinks7->setText("");
 
-    ui->labelLinksUrl1->setText("<a href=\"https://www.salvagenet.org\">https://www.salvagenet.org</a>");
-    ui->labelLinksUrl2->setText("<a href=\"https://salvagenet.org/go/whitepaper\">https://salvagenet.org/go/whitepaper</a>");
-    ui->labelLinksUrl3->setText("<a href=\"http://explorer.salvagenet.org:3001\">http://explorer.salvagenet.org:3001</a>");
-    ui->labelLinksUrl4->setText("<a href=\"https://salvagenet.org/go/discord\">https://salvagenet.org/go/discord</a>");
-    ui->labelLinksUrl5->setText("<a href=\"https://salvagenet.org/go/twitter\">https://salvagenet.org/go/twitter</a>");
-    ui->labelLinksUrl6->setText("<a href=\"https://github.com/Salvage-Ex/Salvage\">https://github.com/Salvage-Ex/Salvage</a>");
-    ui->labelLinksUrl7->setText("<a href=\"https://salvagenet.org/list-of-merchants-taking-svg\">https://salvagenet.org/list-of-merchants-taking-svg</a>");
+    ui->labelLinksUrl1->setText("<a href=\"https://www.salvageproject.org\">https://www.salvageproject.org</a>");
+    ui->labelLinksUrl2->setText("<a href=\"https://salvageproject.org/whitepaper\">https://salvageproject.org/whitepaper</a>");
+    ui->labelLinksUrl3->setText("<a href=\"http://explorer.salvageproject.org:3001\">http://explorer.salvageproject.org:3001</a>");
+    ui->labelLinksUrl4->setText("<a href=\"https://discord.gg/KAbBer2\">https://discord.gg/KAbBer2</a>");
+    ui->labelLinksUrl5->setText("<a href=\"https://github.com/Salvage-Ex/Salvage\">https://github.com/Salvage-Ex/Salvage</a>");
+    ui->labelLinksUrl6->setText("");
+    ui->labelLinksUrl7->setText("");
 }
