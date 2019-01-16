@@ -152,7 +152,20 @@ public:
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x92)(0xf0).convert_to_container<std::vector<unsigned char> >();  
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md 109 	0x8000006d
 
+        vFixedSeeds.clear();
+        vSeeds.clear();
+
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
+
+        vSeeds.push_back(CDNSSeedData("seed01.salvageproject.org", "seed01.salvageproject.org"));
+        vSeeds.push_back(CDNSSeedData("seed02.salvageproject.org", "seed02.salvageproject.org"));
+        vSeeds.push_back(CDNSSeedData("seed03.salvageproject.org", "seed03.salvageproject.org"));
+        vSeeds.push_back(CDNSSeedData("seed04.salvageproject.org", "seed04.salvageproject.org"));
+        vSeeds.push_back(CDNSSeedData("seed05.salvageproject.org", "seed05.salvageproject.org"));
+        vSeeds.push_back(CDNSSeedData("seed06.salvageproject.org", "seed06.salvageproject.org"));
+        vSeeds.push_back(CDNSSeedData("seed07.salvageproject.org", "seed07.salvageproject.org"));
+        vSeeds.push_back(CDNSSeedData("seed08.salvageproject.org", "seed08.salvageproject.org"));
+        vSeeds.push_back(CDNSSeedData("seed09.salvageproject.org", "seed09.salvageproject.org"));
 
         fMiningRequiresPeers           = true;
         fAllowMinDifficultyBlocks      = false;
@@ -221,9 +234,6 @@ public:
 
         hashGenesisBlock               = genesis.GetHash();
        // assert(hashGenesisBlock      == uint256("0x000008467c3a9c587533dea06ad9380cded3ed32f9742a6c0c1aebc21bf2bc9b"));
-
-        vFixedSeeds.clear();
-        vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 125); // Start with 's' from https://en.bitcoin.it/wiki/List_of_address_prefixes
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 127);  // Start with 't' from https://en.bitcoin.it/wiki/List_of_address_prefixes
