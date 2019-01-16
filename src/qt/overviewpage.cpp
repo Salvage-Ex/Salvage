@@ -339,8 +339,8 @@ void OverviewPage::SetLinks()
     ui->labelLinks2->setText("Whitepaper:");
     ui->labelLinks3->setText("Block Explorer:");
     ui->labelLinks4->setText("Discord:");
-    ui->labelLinks6->setText("Github:");
-    ui->labelLinks5->setText("");
+    ui->labelLinks5->setText("Github:");
+    ui->labelLinks6->setText("");
     ui->labelLinks7->setText("");
 
     ui->labelLinksUrl1->setText("<a href=\"https://salvageproject.org\">https://salvageproject.org</a>");
