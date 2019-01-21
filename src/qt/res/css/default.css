@@ -66,12 +66,12 @@ QToolBar > QToolButton {
   alignment: left;
   background-color: transparent;
   selection-background-color: transparent;
-  border: 1px  solid #444444;
+  border: 1px  solid #555555;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
   min-height: 2.5em;
-  padding: 0em 0em;
+  padding: 10px 0 0;
   font-weight: bold;
   font-size: 11px;
   color: #fff;
@@ -140,8 +140,8 @@ QTabBar::tab:hover:!selected {
 }
 
 QWidget {
-	selection-background-color:#FF0000; /* Object highlight color */
-	selection-color:#fff;
+	selection-background-color:#f2f2f2; /* Object highlight color */
+	selection-color:#fff000;
 	outline:0; /* Remove Annoying Focus Rectangle */
 }
 
@@ -412,7 +412,7 @@ QHeaderView::section:last {
 }
 
 .QScrollArea {
-	background:transparent;
+	background:green;
 	border:0;
 }
 
@@ -435,6 +435,7 @@ QTableWidget { /* Table Background */
 	background-color: #fcfcfc;
 	alternate-background-color: yellow;
 	border:1px solid #333;
+	color: #000000;
 }
 
 QTableWidget:focus, QTableView, QTableView:focus { /* Remove focus outline */
@@ -804,6 +805,7 @@ QDialog#HelpMessageDialog QScrollArea * {
 
 QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScrollBar:horizontal {
 	border:0;
+	color: #000000;
 }
 
 /* About CryptoBnB Dialog */
@@ -1079,8 +1081,9 @@ QDialog#SendCoinsDialog .QFrame#frameCoinControl .QLabel#labelCoinControlChangeL
 	font-weight:normal;
 }
 
-QDialog#SendCoinsDialog .QScrollArea#scrollArea .QWidget#scrollAreaWidgetContents { /* Send To Widget */
-	background-color:#ffffff;
+QDialog#SendCoinsDialog .QScrollArea#scrollArea .QWidget#scrollAreaWidgetContents { /* Send To Widget *//*chnange*/
+	background-color:#f2f2f2;
+	color: #000;
 }
 
 QDialog#SendCoinsDialog .QCheckBox#checkSwiftTX { /* SwiftTX Checkbox */
@@ -1402,3 +1405,4 @@ QCalendarWidget QAbstractItemView:enabled { /* Calendar widget weekdays in month
 QCalendarWidget QAbstractItemView:disabled { /* Calendar widget days not in month */
 	color:#818181;
 }
+
