@@ -58,6 +58,7 @@ using namespace std;
  */
 
 CCriticalSection cs_main;
+CCriticalSection cs_mapstake;
 
 BlockMap mapBlockIndex;
 map<uint256, uint256> mapProofOfStake;
@@ -1047,7 +1048,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
 
     //Coinstake is also only valid in a block, not as a loose transaction
     if (tx.IsCoinStake())
-        return state.DoS(100, error("AcceptToMemoryPool: coinstake as individual tx"),
+        return state.DoS(100, error("AcceptToMemoryPool: coinstake as individual tx. txid=%s", tx.GetHash().GetHex()),
             REJECT_INVALID, "coinstake");
 
     // Rather not work on nonstandard transactions (unless -testnet/-regtest)
@@ -1955,8 +1956,11 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
                     coins->vout.resize(out.n + 1);
                 coins->vout[out.n] = undo.txout;
 
-                // erase the spent input
-                mapStakeSpent.erase(out);
+                {
+                    LOCK(cs_mapstake);
+                    // erase the spent input
+                    mapStakeSpent.erase(out);
+                }
             }
         }
     }
@@ -2189,22 +2193,27 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         if (!pblocktree->WriteTxIndex(vPos))
             return state.Abort("Failed to write transaction index");
 
-    // add new entries
-    for (const CTransaction tx: block.vtx) {
-        if (tx.IsCoinBase())
-            continue;
-        for (const CTxIn in: tx.vin) {
-            mapStakeSpent.insert(std::make_pair(in.prevout, pindex->nHeight));
+    {
+        LOCK(cs_mapstake);
+
+        // add new entries
+        for (const CTransaction tx: block.vtx) {
+            if (tx.IsCoinBase())
+                continue;
+            for (const CTxIn in: tx.vin) {
+                mapStakeSpent.insert(std::make_pair(in.prevout, pindex->nHeight));
+            }
+        }
+
+        // delete old entries
+        for (auto it = mapStakeSpent.begin(); it != mapStakeSpent.end();) {
+            if (it->second < pindex->nHeight - Params().MaxReorganizationDepth()) {
+                it = mapStakeSpent.erase(it);
+            } else {
+                it++;
+            }
         }
     }
-
-    // delete old entries
-    for (auto it = mapStakeSpent.begin(); it != mapStakeSpent.end(); ++it) {
-        if (it->second < pindex->nHeight - Params().MaxReorganizationDepth()) {
-            mapStakeSpent.erase(it->first);
-        }
-}
-
 
     // add this block to the view's block chain
     view.SetBestBlock(pindex->GetBlockHash());
@@ -3374,6 +3383,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         CCoinsViewCache coins(pcoinsTip);
 
         if (!coins.HaveInputs(block.vtx[1])) {
+            LOCK(cs_mapstake);
 
             // the inputs are spent at the chain tip so we should look at the recently spent outputs
             for (CTxIn in : block.vtx[1].vin) {
@@ -5315,7 +5325,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         string strMsg;
         unsigned char ccode;
         string strReason;
-        
+
         try {
             vRecv >> LIMITED_STRING(strMsg, CMessageHeader::COMMAND_SIZE) >> ccode >> LIMITED_STRING(strReason, MAX_REJECT_MESSAGE_LENGTH);
 
