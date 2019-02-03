@@ -5,14 +5,14 @@
 /* light-gray:			#f2f2f2	                                                        */
 /* background:        	#f8f6f6                                                         */
 /* input fields:       	#e7e7e7 														*/
-/* very light yellow	#ffffe6                                                         */
+/* very light yellow	#ffe600                                                        */
 /****************************************************************************************/
 
 WalletFrame {
 	border-image: url(':/images/walletFrame') 0 0 0 0 stretch stretch;
 	border-top: 0px solid #000;
-	margin: 0;
-	padding: 0;
+	padding-top:20px;
+	padding-bottom: 20px;
 }
 
 QStatusBar {
@@ -141,7 +141,7 @@ QTabBar::tab:hover:!selected {
 
 QWidget {
 	selection-background-color:#f2f2f2; /* Object highlight color */
-	selection-color:#fff000;
+	selection-color:#ffe600;
 	outline:0; /* Remove Annoying Focus Rectangle */
 }
 
@@ -433,7 +433,7 @@ QTableView::item:selected { /* Table Item Selected */
 
 QTableWidget { /* Table Background */
 	background-color: #fcfcfc;
-	alternate-background-color: yellow;
+	alternate-background-color: #ffe600;
 	border:1px solid #333;
 	color: #000000;
 }
