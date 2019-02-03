@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>594</width>
-    <height>526</height>
+    <height>558</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,7 +37,7 @@
         <number>1</number>
        </property>
        <property name="text">
-        <string>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other SVG addresses after it matures.
+        <string>MultiSend allows you to automatically send up to 100% of your masternode reward to a list of other SVG addresses after it matures.
 To Add: enter percentage to give and SVG address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</string>
@@ -75,6 +75,9 @@ MultiSend will not be activated unless you have clicked Activate</string>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QCheckBox" name="multiSendStakeCheckBox">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
            <property name="text">
             <string>Send For Stakes</string>
            </property>
@@ -84,6 +87,9 @@ MultiSend will not be activated unless you have clicked Activate</string>
           <widget class="QCheckBox" name="multiSendMasternodeCheckBox">
            <property name="text">
             <string>Send For Masternode Rewards</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
            </property>
           </widget>
          </item>
